@@ -100,12 +100,34 @@ var saveAs=saveAs||navigator.msSaveBlob&&navigator.msSaveBlob.bind(navigator)||f
 		<div id="init-lacking">Your browser lacks required capabilities. Please upgrade it or switch to another to continue.</div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<tw-storydata name="Love with a Side of Fries" startnode="1" creator="Twine" creator-version="2.3.5" ifid="5F8B1624-9CB5-4485-811B-059E9209CD6E" zoom="1" format="SugarCube" format-version="2.30.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Introduction" tags="" position="399,101" size="100,100">Detail the Fast Food Invitational letter.
+	<tw-storydata name="Love with a Side of Fries" startnode="1" creator="Twine" creator-version="2.3.5" ifid="5F8B1624-9CB5-4485-811B-059E9209CD6E" zoom="0.6" format="SugarCube" format-version="2.30.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">body{
+  text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14pt;
+}
 
-[[At the Hotel]]
+</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="Arby" color="red"></tw-tag>,<tw-tag name="King" color="orange"></tw-tag>,<tw-tag name="Ronnie" color="yellow"></tw-tag>,<tw-tag name="Wendy" color="blue"></tw-tag>,<tw-tag name="checkpoint" color="green"></tw-tag>,<tw-tag name="king" color="orange"></tw-tag>,<tw-tag name="first-date" color="gray"></tw-tag><tw-passagedata pid="1" name="Introduction" tags="" position="156,235" size="100,100">&quot;Here&#39;s your stop&quot;
 
-</tw-passagedata><tw-passagedata pid="2" name="At the Hotel" tags="" position="595,101.5" size="100,100">Describe the entrance
-Describe the registrar
+You pay your cabbie his faire and exit the taxi. After grabbing your luggage from the trunk you drink in the sight before you.
+
+The hotel shimmers in the daylight, reflecting the glow with it&#39;s infinite walls of windows. The building&#39;s slightly curved edges give it a sleek modern look. 
+
+You pull the letter out from your coat pocket and reread the instructions
+
+
+Congratulations, you have been invited to the Burger Franchise Invitational Conference. 
+
+A soiree for the most prestigious fast-food franchises specializing in american burgers and cuisine. Here you will be able to engage with your fellow peers, representing burger franchises from all over the globe.
+
+You have been selected for an invitation based on your previous repretoire of being a distinguished guest, or have aquired noteriety decedent food and efficient service. 
+
+
+Location and information has been provided. Please register once you arrive at the hotel. 
+
+[[Enter the Hotel]]
+
+</tw-passagedata><tw-passagedata pid="2" name="Enter the Hotel" tags="" position="336,232" size="100,100">
+The lobby of the hotel is truly a modern ambiance. Marble tile decorates the floor while geometric lighting hang precariously from the elevated ceiling. Two fountains bubble quietly at either side of the lobby, while the registar counter  takes center stage. You walk up and present your invitation to the clerk behind the counter. 
 
 &quot;In order to get your room information I am going to need to confirm who you are.&quot;
 
@@ -115,19 +137,18 @@ Enter your name:
 &lt;&lt;textbox &quot;$name&quot; &quot;&quot;&gt;&gt;
 
 Enter your burger franchise:
-&lt;&lt;textbox &quot;$food&quot; &quot;&quot;&gt;&gt;
+&lt;&lt;textbox &quot;$food&quot; &quot;&quot; &quot;Verified&quot; &gt;&gt;
 
-&lt;span id=&quot;verified&quot;&gt;
-&lt;&lt;button &quot;Verify your Reservation&quot;&gt;&gt;
-&lt;&lt;replace &quot;#verified&quot;&gt;&gt;&lt;&lt;print &quot;Pleasure to meet you &lt;&lt;print $name&gt;&gt;. I have registered you as the representative for &lt;&lt;print $food&gt;&gt;. You will be in room 024. You might want to freshen up quickly! The event will be starting soon.&quot;&gt;&gt;&lt;&lt;/replace&gt;&gt;
-[[Take key and Go to Room]]
-&lt;&lt;/button&gt;&gt;
-&lt;/span&gt;
-
-</tw-passagedata><tw-passagedata pid="3" name="Take key and Go to Room" tags="" position="792,100.5" size="100,100">Double-click this passage to edit it.
+[[Verified]] 
 
 
-[[Head Down to the Party]]</tw-passagedata><tw-passagedata pid="4" name="Head Down to the Party" tags="" position="995,99.5" size="100,100">-Describe Environment
+
+
+
+</tw-passagedata><tw-passagedata pid="3" name="Take key and Go to Room" tags="" position="638,238" size="100,100">You go upt to your hotel room and unload your stuff. By the time you freshen up the party has always.
+
+
+[[Head Down to the Party]]</tw-passagedata><tw-passagedata pid="4" name="Head Down to the Party" tags="" position="790,231" size="100,100">-Describe Environment
 -Introduction to Arby
 -Introduction to King
 --King gives you a once over
@@ -146,73 +167,777 @@ Enter your burger franchise:
 --Get Arby&#39;s Number
 --end of encounter
 
-[[Return to Hotel Room]]</tw-passagedata><tw-passagedata pid="5" name="Return to Hotel Room" tags="" position="997,267.5" size="100,100">Who do you want to call
+[[Return to Hotel Room]]</tw-passagedata><tw-passagedata pid="5" name="Return to Hotel Room" tags="" position="997,267" size="100,100">Who do you want to call
 
 [[Call Arby]]
 [[Call King]]
 [[Call Ronnie]]
 [[Call Wendy]]
-[[Call no one and try to forget this mess of a night]]</tw-passagedata><tw-passagedata pid="6" name="Call Arby" tags="" position="693,397.5" size="100,100">Double-click this passage to edit it.
+[[Call no one and try to forget this mess of a night]]</tw-passagedata><tw-passagedata pid="6" name="Call Arby" tags="Arby checkpoint" position="688,390" size="100,100">
+&lt;&lt;set $ArbyLove to 50&gt;&gt;
+Double-click this passage to edit it.
 
-[[Its a Date!-&gt;A Date with Arby]]</tw-passagedata><tw-passagedata pid="7" name="Call King" tags="" position="894,399.5" size="100,100">
+[[Its a Date!-&gt;A Date with Arby]]</tw-passagedata><tw-passagedata pid="7" name="Call King" tags="King checkpoint" position="860,399" size="100,100">
+You decide to call the King. After talking for a bit, he agrees to pick you up at 7:00pm to take you to his favorite restaurant, the Cheesecake Factory. It is already 6:15, and you begin to rush to get ready.
 
-[[Its a Date!-&gt;A Date With King]]</tw-passagedata><tw-passagedata pid="8" name="Call Ronnie" tags="" position="1091,397.5" size="100,100">
+[[Its a Date!-&gt;A Date With King]]</tw-passagedata><tw-passagedata pid="8" name="Call Ronnie" tags="Ronnie checkpoint" position="1149,370" size="100,100">
 
-[[Its a Date!-&gt;A Date with Ronnie]]</tw-passagedata><tw-passagedata pid="9" name="Call Wendy" tags="" position="1398,495.5" size="100,100">
+[[Its a Date!-&gt;A Date with Ronnie]]</tw-passagedata><tw-passagedata pid="9" name="Call Wendy" tags="Wendy checkpoint" position="1331,392" size="100,100">You can&#39;t get your mind off the firey Redhead at the party. For someone with such an innocent face, you would never expect her to be *that* forward. Then again that confidence...you can&#39;t help but admire it. 
 
-[[Its a Date!-&gt;A Date with Wendy]]</tw-passagedata><tw-passagedata pid="10" name="Call no one and try to forget this mess of a night" tags="" position="1495,100.5" size="100,100">
+It motivates you to give her a call. It&#39;s late but she&#39;s seems like a night owl anyways. Maybe you can meet up for coffee, get to know her a bit more. Does she even drink coffee? Guess you&#39;ll have to see. 
+
+You dial her number, hearing your heart pound in your chest with each ring. You don&#39;t know why you&#39;re so nervous...
+
+&quot;Yo, whats good?&quot;
+
+You hear the heavy throbbing of bass in the background with onslaughts of cheers. Where on earth could she be??
+
+&quot;Hi Wendy, it&#39;s $name...from the party. I was wondering if maybe you would uh, grab a drink-&quot;
+
+She cuts you off with a cackle.
+
+&quot;Took you long enough to call! Meet me downtown at the corner of 2nd and 3rd street tomorrow night. 8pm. No questions asked. I&#39;ll text ya a map. See ya then, newbie.&quot;
+
+-Click-
+
+
+[[Its a Date!-&gt;A Date with Wendy]]</tw-passagedata><tw-passagedata pid="10" name="Call no one and try to forget this mess of a night" tags="Game-End" position="1406,203" size="100,100">
 You decide to go to sleep and check out of your reservation two days early.
 Your boss is extremely upset over your lack of networking and fires you upon your return. 
 
-GAME OVER</tw-passagedata><tw-passagedata pid="11" name="A Date with Arby" tags="" position="501,500.5" size="100,100">-Describe encounter
+GAME OVER</tw-passagedata><tw-passagedata pid="11" name="A Date with Arby" tags="1st-Date Arby" position="501,498" size="100,100">-Describe encounter
 -Dialogue
 -Question 1:
 
-[[general question choice-Arby]]
-[[general question choice-Arby]]
-[[general question choice-Arby]]
-[[general question choice-Arby]]</tw-passagedata><tw-passagedata pid="12" name="A Date With King" tags="" position="798,544.5" size="100,100">-Describe encounter
+[[1stDate Choice1 GenQ Arby]]
+[[1stDate Choice2 GenQ Arby]]
+[[1stDate Choice3 GenQ Arby]]
+[[1stDate Choice4 GenQ Arby]]</tw-passagedata><tw-passagedata pid="12" name="A Date With King" tags="1st-Date King" position="798,544" size="100,100">/*introduction affection variable*/
+
+&lt;&lt;set $affection to 50&gt;&gt;
+
+He picks you up at 7:00pm sharp in a limousine. As the chauffeur drives you to the restaurant you too make small talk about the Kings business and his affairs. You begin to fluster when you begin to run out of things to say. Luckily, you arrive at the restaurant. The King goes around to open the door for you, but only after the chauffeur lets him out first.
+
+In the restaurant, he orders Chateau Margaux for drinks. You gasp to yourself at the expensiveness of the drink. He begins to order his food. 
+
+&quot;I will have Shelia&#39;s chicken and avocado salad, please.&quot; 
+
+He looks to you to order. Your eyes shoot down to scan the menu. You&#39;ve never been to a place quite as fancy as this. You are debating what you can and can&#39;t afford and looking for the best option trying to impress him. He notices your distress and speaks up.
+
+&quot;I believe you will like the chicken and avocado salad. It has chicken, avocado, carrots, cilantro, cashews, and red onions in it.&quot; 
+
+You stutter to respond. &quot;I-I&#39;m actually alergic to onions...&quot;
+
+&quot;Then we shall make sure there are none on it.&quot; He turns and nods to the waiter and collects your menue to hand it over. As the waiter leaves, you slump slightly in disappointment knowing you couldn&#39;t even order for yourself. 
+
+&quot;Don&#39;t worry, the menu can be quite intimidating.&quot; You smile feeling better and blush at his attempt to make you feel better. 
+
+He smiles brighter at the site of you blushing and lightly bites his lip. He leans in closer with a smirk on his face. 
+
+&quot;Are you feeling okay moi doudou? 
+
+&quot;Oh yes...but..doudou?&quot;
+
+He chuckles &quot;I guess your homework is to look that up when you get back to the hotel.&quot;
+
+The food arrives and you both begin to dig in. You loved the taste so much. The chicken was perfectly seasoned and worked well with the cashews. You cant help but smile while eating it. You look up to see the King enjoying his salad also.
+
+[[&quot;So why did you decide to go into the business?&quot;]]
+[[&quot;Do you always like to go to expensive places?&quot;]]
+[[&quot;What is your favorite food?&quot;]]
+</tw-passagedata><tw-passagedata pid="13" name="A Date with Ronnie" tags="1st-Date Ronnie" position="1155,543" size="100,100">-Describe encounter
 -Dialogue
 -Question 1:
 
-[[general question choice-King]]
-[[general question choice-King]]
-[[general question choice-King]]
-[[general question choice-King]]</tw-passagedata><tw-passagedata pid="13" name="A Date with Ronnie" tags="" position="1155,543.5" size="100,100">-Describe encounter
--Dialogue
--Question 1:
+[[1stDate Choice1 GenQ Ronnie]]
+[[1stDate Choice2 GenQ Ronnie]]
+[[1stDate Choice3 GenQ Ronnie]]
+[[1stDate Choice4 GenQ Ronnie]]</tw-passagedata><tw-passagedata pid="14" name="A Date with Wendy" tags="1st-Date Wendy" position="1800,398" size="100,100">
+/*introduction affection variable*/
 
-[[general question choice-Ronnie]]
-[[general question choice-Ronnie]]
-[[general question choice-Ronnie]]
-[[general question choice-Ronnie]]</tw-passagedata><tw-passagedata pid="14" name="A Date with Wendy" tags="" position="1589,595.5" size="100,100">-Describe encounter
--Dialogue
--Question 1:
+&lt;&lt;set $affection to 50&gt;&gt;
 
-[[general question choice-Wendy]]
-[[general question choice-Wendy]]
-[[general question choice-Wendy]]
-[[general question choice-Wendy]]</tw-passagedata><tw-passagedata pid="15" name="Choice1-Arby" tags="" position="175,899.5" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="16" name="Choice2-Arby" tags="" position="283,898.5" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="17" name="Choice3-Arby" tags="" position="393,895.5" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="18" name="Choice4-Arby" tags="" position="505,890.5" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="19" name="Choice1-King" tags="" position="704,901.5" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="20" name="Choice2-King" tags="" position="814,897.5" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="21" name="Choice3-King" tags="" position="926,896.5" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="22" name="Choice4-King" tags="" position="1041,893.5" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="23" name="Choice1-Ronnie" tags="" position="1201,897.5" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="24" name="Choice2-Ronnie" tags="" position="1312,895.5" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="25" name="Choice3-Ronnie" tags="" position="1425,896.5" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="26" name="Choice4-Ronnie" tags="" position="1539,894.5" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="27" name="Choice1-Wendy" tags="" position="1691,892.5" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="28" name="Choice2-Wendy" tags="" position="1806,894.5" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="29" name="Choice3-Wendy" tags="" position="1916,894.5" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="30" name="Choice4-Wendy" tags="" position="2031,896.5" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="31" name="general question choice-Arby" tags="" position="402,696.5" size="100,100">-segway into question 2
+You barely slept last night, spending most of it mentally dissecting your conversation with Wendy. You&#39;re not sure if Wendy thought you were meeting up for a date or a drug deal. With how long you&#39;ve been standing out here in the cold though, it&#39;s starting to feel like the latter. 
+
+About 10 minutes past the hour, she finally shows up, yelling at you from across the street. She&#39;s decked an oversized winter coat with fur trim, and a blue skirt underneath. She has kneepads strapped on and a helmet with a graffiti tag that reads &quot;Square Up&quot;.
+
+She catches up to you, clutching tightly to a pair of roller blades and and a duffle bag.
+
+&quot;Ready for some fun, newbie?&quot;
+
+---
+
+You can feel the bass of the speakers as the crowd jumps and cheers. Of all the places you ever thought you&#39;d find yourself in, an underground roller derby rink would certainly be last on the list. 
+
+The lights dim low and strobelights flash as the beat intensifies.
+
+&quot;Ladies and Gentlemen...&quot; A voice annouces over the speakers,&quot;Are you ready to rumble?!&quot;
+
+The crowd goes wild as the teams enter the track. In the front row you get a full view of Wendy as she rides out, decked in a blue and white striped outfit. Her bright red hair tied in wild pigtails blow in the wind. She leads her team to position as she takes the back spot. Placing a cap with a star over her helmet.
+
+She told you she was the Jammer of her team before she left you in the stands, describing her position as something like a quarterback and wide reciever combined. You don&#39;t know anything about roller derby, but when the game begins you start catching on. 
+
+The game is fast, furious, and a perfect fit for Wendy. She absolutely shines on the rink. She dips and dives around her opponents, dodging them with ease. In one instance, one of the opponents tries to tackle her, which she jumps over, blowing you a kiss as she speeds by. 
+
+====
+
+After the match you find yourself sitting with her in a brokedown diner two blocks away from the rink. She orders a coffee, black, and a slice of pie. 
+
+&quot;This is the only place that ever seems to be open near the rink,&quot; she comments between bites, &quot;if it wasn&#39;t for this joint I would&#39;ve starved to death!&quot;
+
+
+[[&quot;So how did you get into roller derby?&quot;]]
+[[&quot;I take it pie is your favorite desert.&quot;]]
+[[&quot;So...what&#39;s your deal with Ronnie?&quot;]]
+[[Say nothing.]]</tw-passagedata><tw-passagedata pid="15" name="Choice1-Arby" tags="Arby 1st-Date" position="0,1057.6666666666667" size="100,100">Double-click this passage to edit it.
+
+-Dialogue
+-Date Ends
+
+[[Return to Hotel -&gt;End Arby Date]]</tw-passagedata><tw-passagedata pid="16" name="Choice2-Arby" tags="Arby 1st-Date" position="116,1043.3333333333333" size="100,100">Double-click this passage to edit it.
+-Dialogue
+-Date Ends
+
+[[Return to Hotel -&gt;End Arby Date]]</tw-passagedata><tw-passagedata pid="17" name="Choice3-Arby" tags="Arby 1st-Date" position="238.33333333333331,1043.3333333333333" size="100,100">-Dialogue
+-Date Ends
+
+[[Return to Hotel -&gt;End Arby Date]]</tw-passagedata><tw-passagedata pid="18" name="Choice4-Arby" tags="Arby 1st-Date" position="356.3333333333333,984.9999999999999" size="100,100">-Dialogue
+-Date Ends
+
+[[Return to Hotel -&gt;End Arby Date]]</tw-passagedata><tw-passagedata pid="19" name="Choice1-Ronnie" tags="Ronnie 1st-Date" position="1157,1029" size="100,100">-Dialogue
+-Date Ends
+
+[[Return to Hotel-&gt;end Ronnie date]]</tw-passagedata><tw-passagedata pid="20" name="Choice2-Ronnie" tags="Ronnie 1st-Date" position="1272,1026" size="100,100">-Dialogue
+-Date Ends
+
+[[Return to Hotel-&gt;end Ronnie date]]</tw-passagedata><tw-passagedata pid="21" name="Choice3-Ronnie" tags="Ronnie 1st-Date" position="1376,1023" size="100,100">-Dialogue
+-Date Ends
+
+[[Return to Hotel-&gt;end Ronnie date]]</tw-passagedata><tw-passagedata pid="22" name="Choice4-Ronnie" tags="Ronnie 1st-Date" position="1479,1019" size="100,100">-Dialogue
+-Date Ends
+
+[[Return to Hotel-&gt;end Ronnie date]]</tw-passagedata><tw-passagedata pid="23" name="Verified" tags="" position="492,228" size="100,100">
+&quot;Pleasure to meet you &lt;&lt;print $name&gt;&gt;. I have registered you as the representative for &lt;&lt;print $food&gt;&gt;. You will be in room 024. You might want to freshen up quickly! The event will be starting soon.&quot;&gt;&gt;
+
+[[Take key and Go to Room]]
+
+</tw-passagedata><tw-passagedata pid="24" name="1stDate Choice1 GenQ Arby" tags="1st-Date Arby" position="0,691.3333333333334" size="100,100">-segway into question 2
 
 [[Choice1-Arby]]
 [[Choice2-Arby]]
 [[Choice3-Arby]]
-[[Choice4-Arby]]</tw-passagedata><tw-passagedata pid="32" name="general question choice-King" tags="" position="797,700.5" size="100,100">-segway into question 2
+[[Choice4-Arby]]</tw-passagedata><tw-passagedata pid="25" name="1stDate Choice2 GenQ Arby" tags="1st-Date Arby" position="163.66666666666666,685.6666666666666" size="100,100">-segway into question 2
 
-[[Choice1-King]]
-[[Choice2-King]]
-[[Choice3-King]]
-[[Choice4-King]]</tw-passagedata><tw-passagedata pid="33" name="general question choice-Ronnie" tags="" position="1221,695.5" size="100,100">-segway to question 2
+[[Choice1-Arby]]
+[[Choice2-Arby]]
+[[Choice3-Arby]]
+[[Choice4-Arby]]</tw-passagedata><tw-passagedata pid="26" name="1stDate Choice3 GenQ Arby" tags="1st-Date Arby" position="283.66666666666663,678" size="100,100">-segway into question 2
+
+[[Choice1-Arby]]
+[[Choice2-Arby]]
+[[Choice3-Arby]]
+[[Choice4-Arby]]</tw-passagedata><tw-passagedata pid="27" name="1stDate Choice4 GenQ Arby" tags="1st-Date Arby" position="403.66666666666663,669.6666666666666" size="100,100">-segway into question 2
+
+[[Choice1-Arby]]
+[[Choice2-Arby]]
+[[Choice3-Arby]]
+[[Choice4-Arby]]</tw-passagedata><tw-passagedata pid="28" name="End Arby Date" tags="Arby 1st-Date checkpoint" position="326,1241" size="100,100">It&#39;s well passed nightfall by the time you return to your hotel room. You had a wonderful time on your date today. Although the event is meant to last for the whole weekend, you can&#39;t help longing to skip the conferences and try a second date. You wonder however if they feel the same...
+
+[[Go to Sleep -&gt;Arby Date 2]]
+</tw-passagedata><tw-passagedata pid="29" name="&quot;So why did you decide to go into the business?&quot;" tags="King 1st-Date" position="623.6666666666666,679" size="100,100">&lt;&lt;set $affection +=10&gt;&gt;
+
+Affection points: &lt;&lt;print $affection&gt;&gt;
+
+Thinking of something to say, you think to ask the King why he decided to get into the business.
+
+He raises an eyebrow. &quot;Hmmm.. I don&#39;t believe I have ever thought about that before. If I&#39;m honest with you, food was a big part of my childhood. My parents were always busy working so my maids and nannies typically took care of me. I can remember being upset and begging for them; however they would almost always be far away in another country making business deals or at another fashion show. The maids would always calm me down by making this delicate french dish. It was Coq Au Vin. It&#39;s kind of like a chicken stew. I remember it would always make me feel at peace. That and various other foods were my true comfort as a childhood. I want to comfort people just like my maids and cooks comforted me.&quot;
+
+You look at him with complete awe. You can feel your heart throb in your chest at his story. 
+
+He snickers. &quot;Sorry for the long winded answer.&quot; 
+
+&quot;No no no! I loved your answer. It&#39;s so sweet and charming. It truly lets me see the real you. Thank you for telling me.&quot;
+
+He smiles brightly. &quot;So what about you? Why did you decide to go into the business?&quot;
+
+[[Money]]
+[[Fame]]
+[[Family]]
+[[Nothing else better]]</tw-passagedata><tw-passagedata pid="30" name="&quot;Do you always like to go to expensive places?&quot;" tags="King 1st-Date" position="779.9999999999999,700.6666666666666" size="100,100">Affection points: &lt;&lt;print $affection&gt;&gt;
+
+Looking around the restaurant you decide to ask about his taste in restaurant spaces. 
+
+He looks slightly offended at your question. &quot;Well I do like the more finer things in life. Its just my style. I perfer to be in the company of the extravagent. Is that a problem?&quot;
+
+[[No!]]
+[[Well...Kinda.]]
+</tw-passagedata><tw-passagedata pid="31" name="&quot;What is your favorite food?&quot;" tags="King 1st-Date" position="990,661" size="100,100">&lt;&lt;set $affection +=5&gt;&gt;
+
+Affection points: &lt;&lt;print $affection&gt;&gt;
+
+&quot;So what is your favorite type of food?&quot; You ask, trying to provoke a conversation. 
+
+&quot;The maids would always calm me down by making this delicate french dish whenever I was younger. It was Coq Au Vin. It&#39;s kind of like a chicken stew. I remember it would always make me feel at peace. It was such a homey meal. So much so it was what I really considered to be home. That and various other foods were my true comfort as a childhood. 
+
+What about you? What&#39;s your favorite food?
+
+[[&quot;French&quot;]]
+[[&quot;American&quot;]]
+[[&quot;Hispanic&quot;]]
+[[&quot;Asian&quot;]]
+</tw-passagedata><tw-passagedata pid="32" name="1stDate Choice1 GenQ Ronnie" tags="Ronnie 1st-Date" position="1237.3333333333333,696.6666666666666" size="100,100">-segway to question 2
 
 [[Choice1-Ronnie]]
 [[Choice2-Ronnie]]
 [[Choice3-Ronnie]]
-[[Choice4-Ronnie]]</tw-passagedata><tw-passagedata pid="34" name="general question choice-Wendy" tags="" position="1739,695.5" size="100,100">-segway to question 2
+[[Choice4-Ronnie]]</tw-passagedata><tw-passagedata pid="33" name="1stDate Choice2 GenQ Ronnie" tags="Ronnie 1st-Date" position="1362.6666666666667,691.6666666666666" size="100,100">-segway to question 2
 
-[[Choice1-Wendy]]
-[[Choice2-Wendy]]
-[[Choice3-Wendy]]
-[[Choice4-Wendy]]</tw-passagedata></tw-storydata>
+[[Choice1-Ronnie]]
+[[Choice2-Ronnie]]
+[[Choice3-Ronnie]]
+[[Choice4-Ronnie]]</tw-passagedata><tw-passagedata pid="34" name="1stDate Choice3 GenQ Ronnie" tags="Ronnie 1st-Date" position="1469.3333333333333,686.6666666666666" size="100,100">-segway to question 2
+
+[[Choice1-Ronnie]]
+[[Choice2-Ronnie]]
+[[Choice3-Ronnie]]
+[[Choice4-Ronnie]]</tw-passagedata><tw-passagedata pid="35" name="1stDate Choice4 GenQ Ronnie" tags="Ronnie 1st-Date" position="1621.3333333333333,686.3333333333334" size="100,100">-segway to question 2
+
+[[Choice1-Ronnie]]
+[[Choice2-Ronnie]]
+[[Choice3-Ronnie]]
+[[Choice4-Ronnie]]</tw-passagedata><tw-passagedata pid="36" name="end Ronnie date" tags="Ronnie 1st-Date checkpoint" position="1349,1204" size="100,100">It&#39;s well passed nightfall by the time you return to your hotel room. You had a wonderful time on your date today. Although the event is meant to last for the whole weekend, you can&#39;t help longing to skip the conferences and try a second date. You wonder however if they feel the same...
+
+[[Go to Sleep-&gt;Ronnie Date 2]]</tw-passagedata><tw-passagedata pid="37" name="Arby Date 2" tags="Arby 2nd-Date" position="324,1374" size="100,100">-Describe encounter
+-Dialogue
+-Question 1:
+
+[[choice1-Arby -&gt;2ndDate Choice1 GenQ Arby]]
+[[choice1-Arby -&gt;2ndDate Choice2 GenQ Arby]]
+[[choice1-Arby -&gt;2ndDate Choice3 GenQ Arby]]
+[[choice1-Arby -&gt;2ndDate Choice4 GenQ Arby]]</tw-passagedata><tw-passagedata pid="38" name="Ronnie Date 2" tags="Ronnie 2nd-Date" position="1349,1375" size="100,100">-Describe encounter
+-Dialogue
+-Question 1:
+
+[[choice1-Ronnie -&gt;2ndDate Choice1 GenQ Ronnie]]
+[[choice1-Ronnie -&gt;2ndDate Choice2 GenQ Ronnie]]
+[[choice1-Ronnie -&gt;2ndDate Choice3 GenQ Ronnie]]
+[[choice1-Ronnie -&gt;2ndDate Choice4 GenQ Ronnie]]</tw-passagedata><tw-passagedata pid="39" name="2ndDate Choice1 GenQ Arby" tags="Arby 2nd-Date" position="146,1534" size="100,100">-segway into question 2
+
+[[2ndDate Choice1-Arby]]
+[[2ndDate Choice2-Arby]]
+[[2ndDate Choice3-Arby]]
+[[2ndDate Choice4-Arby]]</tw-passagedata><tw-passagedata pid="40" name="2ndDate Choice2 GenQ Arby" tags="Arby 2nd-Date" position="251,1529" size="100,100">-segway into question 2
+
+[[2ndDate Choice1-Arby]]
+[[2ndDate Choice2-Arby]]
+[[2ndDate Choice3-Arby]]
+[[2ndDate Choice4-Arby]]</tw-passagedata><tw-passagedata pid="41" name="2ndDate Choice3 GenQ Arby" tags="Arby 2nd-Date" position="366,1529" size="100,100">-segway into question 2
+
+[[2ndDate Choice1-Arby]]
+[[2ndDate Choice2-Arby]]
+[[2ndDate Choice3-Arby]]
+[[2ndDate Choice4-Arby]]</tw-passagedata><tw-passagedata pid="42" name="2ndDate Choice4 GenQ Arby" tags="Arby 2nd-Date" position="473,1526" size="100,100">-segway into question 2
+
+[[2ndDate Choice1-Arby]]
+[[2ndDate Choice2-Arby]]
+[[2ndDate Choice3-Arby]]
+[[2ndDate Choice4-Arby]]</tw-passagedata><tw-passagedata pid="43" name="2ndDate Choice1 GenQ Ronnie" tags="Ronnie 2nd-Date" position="1155,1532" size="100,100">-segway into question 2
+
+[[2ndDate Choice1-Ronnie]]
+[[2ndDate Choice2-Ronnie]]
+[[2ndDate Choice3-Ronnie]]
+[[2ndDate Choice4-Ronnie]]</tw-passagedata><tw-passagedata pid="44" name="2ndDate Choice2 GenQ Ronnie" tags="Ronnie 2nd-Date" position="1259,1530" size="100,100">-segway into question 2
+
+[[2ndDate Choice1-Ronnie]]
+[[2ndDate Choice2-Ronnie]]
+[[2ndDate Choice3-Ronnie]]
+[[2ndDate Choice4-Ronnie]]</tw-passagedata><tw-passagedata pid="45" name="2ndDate Choice3 GenQ Ronnie" tags="Ronnie 2nd-Date" position="1366,1525" size="100,100">-segway into question 2
+
+[[2ndDate Choice1-Ronnie]]
+[[2ndDate Choice2-Ronnie]]
+[[2ndDate Choice3-Ronnie]]
+[[2ndDate Choice4-Ronnie]]</tw-passagedata><tw-passagedata pid="46" name="2ndDate Choice4 GenQ Ronnie" tags="Ronnie 2nd-Date" position="1476,1525" size="100,100">-segway into question 2
+
+[[2ndDate Choice1-Ronnie]]
+[[2ndDate Choice2-Ronnie]]
+[[2ndDate Choice3-Ronnie]]
+[[2ndDate Choice4-Ronnie]]</tw-passagedata><tw-passagedata pid="47" name="2ndDate Choice1-Arby" tags="Arby 2nd-Date" position="148,1962" size="100,100">
+
+[[Return to Hotel -&gt;End Arby 2nd Date]]
+</tw-passagedata><tw-passagedata pid="48" name="2ndDate Choice2-Arby" tags="Arby 2nd-Date" position="254,1962" size="100,100">[[Return to Hotel -&gt;End Arby 2nd Date]]
+</tw-passagedata><tw-passagedata pid="49" name="2ndDate Choice3-Arby" tags="Arby 2nd-Date" position="366,1966" size="100,100">[[Return to Hotel -&gt;End Arby 2nd Date]]
+</tw-passagedata><tw-passagedata pid="50" name="2ndDate Choice4-Arby" tags="Arby 2nd-Date" position="475,1966" size="100,100">[[Return to Hotel -&gt;End Arby 2nd Date]]
+</tw-passagedata><tw-passagedata pid="51" name="2ndDate Choice1-Ronnie" tags="Ronnie 2nd-Date" position="1176,1959" size="100,100">[[Return to Hotel -&gt;End Ronnie 2nd Date]]</tw-passagedata><tw-passagedata pid="52" name="2ndDate Choice2-Ronnie" tags="Ronnie 2nd-Date" position="1282,1961" size="100,100">[[Return to Hotel -&gt;End Ronnie 2nd Date]]</tw-passagedata><tw-passagedata pid="53" name="2ndDate Choice3-Ronnie" tags="Ronnie 2nd-Date" position="1390,1958" size="100,100">[[Return to Hotel -&gt;End Ronnie 2nd Date]]</tw-passagedata><tw-passagedata pid="54" name="2ndDate Choice4-Ronnie" tags="Ronnie 2nd-Date" position="1510,1960" size="100,100">[[Return to Hotel -&gt;End Ronnie 2nd Date]]</tw-passagedata><tw-passagedata pid="55" name="End Arby 2nd Date" tags="checkpoint Arby" position="303,2199" size="100,100">
+[[Arby Finale]]</tw-passagedata><tw-passagedata pid="56" name="End Ronnie 2nd Date" tags="Ronnie checkpoint" position="1327,2200" size="100,100">
+
+[[Ronnie Finale]]</tw-passagedata><tw-passagedata pid="57" name="Arby Finale" tags="Arby FinaleEvent" position="298,2392" size="100,100">
+if (affection is over 80) show winning scenario
+
+if (affection under 80) show losing scenario</tw-passagedata><tw-passagedata pid="58" name="King Finale" tags="King FinaleEvent" position="820,1195.333333333333" size="100,100">&lt;&lt;if $affection gt 60&gt;&gt;
+
+It&#39;s the next day after your date and you get a call from the King. Groggy because of the early hour, you pick up the phone.
+
+&quot;Hello?&quot;
+
+&quot;Good morning dear. I was wondering if you were free to meet up later, around noon for lunch? Or would you prefer dinner?
+
+&quot;Lunch is perfect!&quot;
+
+He chuckles at your excitement. &quot;Great, I&#39;ll pick you up around 11:30.&quot; You both say your goodbyes and you start off your day. 
+
+Time moves quickly and soon it is time for the lunch. He picks you up as promised. He is very silent in the car. He almost looks nervous. You try to make small convo to loosen him up but he doesn&#39;t seem to budge. You both arrive at the restaurant and order. After taking your seats you decide to ask him whats wrong.
+
+&quot;Hey. Are you okay? You seem stressed or nervous.&quot; 
+
+He sighs &quot;Okay So, on that.....okay...&lt;&lt;print $name&gt;&gt;, I have decided that I really like you a lot. And I would like to be like a steady thing. Only if you wanted to also. I don&#39;t want to force anything. But I would also be really happy if we were. Oh no now I&#39;m rambling.&quot;
+
+You laugh at his cute display of love. &quot;I would love nothing more than to be in a relationship with you.&quot; He sighs in relief and smiles. 
+
+&quot;Amazing mon doudou.&quot;
+
+&lt;&lt;else&gt;&gt;
+
+You ponder the idea of calling the King yourself to ask for a second date. After almost an entire day without even a text from him, you decide to call. Maybe he&#39;s busy.
+
+&quot;Hello? Hey. I was wondering if you would like to go on another date sometime?&quot;
+
+&quot;Oh Hi.&quot; You here a light hearted female voice. Instantly embarrassed thinking you have the wrong number, you apologize. &quot;I am so sorry, I must have dialed wrong.&quot;
+
+&quot;Oh no I&#39;m the King&#39;s secretary Susan. It&#39;s a pleasure to meet you. As for your question earlier, the King has decided that he is very busy and will not be able to attend any more dates. He thanks you for your time and patience tho!&quot;
+
+-Click.
+
+She hangs up the phone. 
+
+GAME OVER LONELY ENDING
+
+&lt;&lt;endif&gt;&gt;</tw-passagedata><tw-passagedata pid="59" name="Ronnie Finale" tags="Ronnie FinaleEvent" position="1324,2399" size="100,100">
+if (affection is over 80) show winning scenario
+
+if (affection under 80) show losing scenario</tw-passagedata><tw-passagedata pid="60" name="Wendy Finale" tags="Wendy FinaleEvent" position="2192,1335" size="100,100">
+&lt;&lt;if $affection gt 60&gt;&gt;
+You spend the next day debating whether or not to call her. You&#39;d love to see Wendy again, but at the same time you&#39;re not sure if she feels the same. Suddenly your phone buzzes.
+
+&quot;Hello?&quot;
+
+&quot;Meet me at 2nd and 3rd again tonight. 9pm.&quot;
+
+-click-
+
+[[Go Meet Wendy]]
+
+&lt;&lt;else&gt;&gt;
+
+You spend the next day debating whether or not to call her. You&#39;d love to see Wendy again, but at the same time you&#39;re not sure if she feels the same. By the afternoon you decide to give it a shot and call her. She picks up on the third ring.
+
+&quot;Oh hey newbie.&quot;
+
+&quot;Hey Wendy, I was wondering if-&quot;
+
+&quot;Yeah, I don&#39;t think this is gonna work out. See ya never.&quot;
+
+-Click-
+
+Guess that answers your question...
+
+GAME OVER
+
+&lt;&lt;endif&gt;&gt;</tw-passagedata><tw-passagedata pid="61" name="&quot;So how did you get into roller derby?&quot;" tags="" position="1885,585" size="100,100">&lt;&lt;set $affection +=10&gt;&gt;
+
+&quot;I&#39;ve been doing it for a long time now. Its really been a great stress reliever.&quot; 
+
+&quot;I have to say,&quot; you retort hesitantly, &quot;but you were absolutely amazing out there, A total badass! You&#39;re the exact opposite of the brand you represent though, how did that happen?&quot;
+
+She ponders for a moment, sitting her fork down to take a long sip of coffee. She looks down at her reflection in the cup.
+
+&quot;I used to be that way. Frilly dresses and an old fashion look. Always a goodie two-shoes...&quot; 
+
+Her brow furrows as she stares intensely into her reflection. 
+
+&quot;But thats the old me. The me that my grandpa wanted. He thought that people would like a representative with a &#39;little house on the prarie&#39; vibe. It reminded him of happier times and boost sales. But at meetings no one would ever take me seriously. The &#39;cute&#39; me wasn&#39;t cuting it and I was stuck being someone who wasn&#39;t me.&quot;
+
+She looks up at you, her iris bright like the blue sky at peak sunrise. 
+
+
+[[It feels like you&#39;re trying to hard to be something you&#39;re not.]]
+[[This rebranding makes you way hotter.]]
+[[You should always be true to yourself, being happy is whats most important.]]
+[[Say nothing.]]
+
+affection points:&lt;&lt;print $affection&gt;&gt;</tw-passagedata><tw-passagedata pid="62" name="&quot;I take it pie is your favorite desert.&quot;" tags="" position="2173,564" size="100,100">&lt;&lt;set $affection +=5&gt;&gt;
+She takes another bite before setting her fork down to grab a sip of coffee.
+
+&quot;Actually my favorite dessert is soft serve ice cream. It&#39;s what my brand is known for. I know I don&#39;t come off as having anything in common with my brand, thats the one thing about me that hasn&#39;t changed.&quot; 
+
+She looks from her cup out to the window. Your eyes follow. The streets are relatively empty at this hour, aside from the occassional taxi and pedestrian. The streets are covered in a neon glow from all the late night diners,tabacco, and pawn shops.
+
+&quot;I don&#39;t like a lot about who I used to be, but there are some things about me that haven&#39;t been replaced. Old habits I guess.&quot;
+
+Her voice is softer compared to usual. Her eyes remain focused on the road outside.
+
+&quot;Sometimes, even now, I still feel like I can&#39;t escape my old self, no matter how much I try to change...&quot;
+
+[[It&#39;s good to hold on to some things of the past. They remind you of where you came from.]]
+
+[[If you&#39;re still clinging to the past then you haven&#39;t actually changed, just pretending to.]]
+
+[[Who we are now isn&#39;t who we were or who we will be. It helps to be happy with who you are in this moment.]]
+
+[[Say nothing.]]
+
+affection points: &lt;&lt;print $affection&gt;&gt;
+
+</tw-passagedata><tw-passagedata pid="63" name="&quot;So...what&#39;s your deal with Ronnie?&quot;" tags="" position="2558,654" size="100,100">&lt;&lt;set $affection -=10&gt;&gt;
+She slams her fist on the table, causing some of the coffee to fly out.
+
+&quot;Holy shit are you serious?!&quot; She excaims.
+
+The bright blue of her eyes flashes like raging tides, glaring at you.
+
+&quot;She&#39;s a stuck-up money-hungry tight ass. Her brand is all about how fast and how much they can sell. No care in quality. No nothing...&quot;
+
+She grits her teeth and looks away. 
+
+&quot;Not only that but everyone&#39;s up her ass! I was supposed to be the only redhead in town, but now she&#39;s decided that she wants to class-up her look, she steals my signature hair color! Talk about low.&quot;
+
+[[Don&#39;t get pissed I just asked.]]
+[[I mean we are competing brands, alls fair in love and franchise.]]
+[[Well, for the record, your hair looks way better than hers.]]
+[[Say nothing.]]
+
+affection points: &lt;&lt;print $affection&gt;&gt;</tw-passagedata><tw-passagedata pid="64" name="Say nothing." tags="" position="3005,617" size="100,100">&lt;&lt;set $affection +=0&gt;&gt;
+
+&quot;You know,&quot; she speaks between bites, &quot;you can talk to me. I may bark but I don&#39;t bite...often&quot;.
+
+You consider to sit in silence debating whether or not to get a slice of pie to pass the time. 
+
+&quot;Ok so, I don&#39;t get you newbie.&quot; She drops her fork on her plate and grabs her coffee cup, leaning back with her eyes narrowed at you. 
+
+&quot;You called me, I brought you to the rink. From what it looked like you were having a good time. And now we&#39;ve got a second to ourselves and the cat&#39;s got your tongue. If you&#39;re not having fun you can leave anytime newbie.&quot;
+
+[[No, I really did have a good time!]]
+[[I&#39;m not the best with conversation...]] 
+[[Get up and leave.]]
+
+affection points: &lt;&lt;print $affection&gt;&gt;</tw-passagedata><tw-passagedata pid="65" name="It feels like you&#39;re trying to hard to be something you&#39;re not." tags="" position="1665,809" size="100,100">&lt;&lt;set $affection -=10&gt;&gt;
+
+&quot;You know, thats none of your damn business newbie.&quot; 
+
+Her eyes pierce you like blue knives as she grips her fork. she then drops her fork on the table to gulp down some coffee before pushing herself up from the table. 
+
+&quot;You know what I think I&#39;m done here. Call me when you&#39;re tired of being a smartass.&quot;
+
+She grabs her stuff and marches out the door. After a few minutes, the waitress comes buy with a check in hand.
+
+&quot;Sorry sweetie, but that pie still needs to be paid for.&quot;
+
+You begrudgingly pay Wendy&#39;s check before leaving.
+
+
+[[Go back to Hotel and Sleep-&gt;Wendy Finale]]
+
+affection points: &lt;&lt;print $affection&gt;&gt;
+</tw-passagedata><tw-passagedata pid="66" name="This rebranding makes you way hotter." tags="" position="1790,810" size="100,100">&lt;&lt;set $affection +=5&gt;&gt;
+She smirks at you, like a predator that just found its next meal. 
+
+&quot;Good to know you&#39;ve got taste newbie.&quot;
+
+She leans in on her elbows and gives you a good look up and down. Her bright blue eyes darken into deep ocean blue, and the way she bites her lip makes the hair stand on the back of your neck. 
+
+Shes about to speak when suddenly her phone starts buzzing. 
+
+&quot;Aw crap,&quot; she groans as she reads the message,&quot;it&#39;s work, dumb rep stuff-you know how that goes. I gotta head out.&quot; She flags the waitress over to pay for her pie and coffee. You then walk with her out of the diner, helping her adjust the weight of her dufflebag. 
+
+&quot;Til next time~&quot; She winks before you part separate ways.
+
+[[Go back to Hotel and Sleep-&gt;Wendy Finale]]
+
+affection points: &lt;&lt;$affection&gt;&gt;</tw-passagedata><tw-passagedata pid="67" name="You should always be true to yourself, being happy is whats most important." tags="" position="1910,817" size="100,100">&lt;&lt;set $affection +=10&gt;&gt;
+
+She grabs her cup again to take a sip, a smile creeping out from behind the rim. 
+
+&quot;Well I may not be perfect, but I&#39;d like to think I am happy. You know newbie, you&#39;ve got a good head on your shoulders.&quot;
+
+You smile back at her and she huffs a laugh. Suddenly her phone starts buzzing. 
+
+&quot;Aw crap,&quot; she groans as she reads the message,&quot;it&#39;s work, dumb rep stuff-you know how that goes. I gotta head out.&quot; She flags the waitress over to pay for her pie and coffee. You then walk with her out of the diner, helping her adjust the weight of her dufflebag. 
+
+&quot;Til next time~&quot; She winks before you part separate ways.
+
+[[Go back to Hotel and Sleep-&gt;Wendy Finale]]
+
+affection points: &lt;&lt;print $affection&gt;&gt;</tw-passagedata><tw-passagedata pid="68" name="No, I really did have a good time!" tags="" position="2845,799" size="100,100">&lt;&lt;set $affection += 10&gt;&gt;
+
+She grabs her cup again to take a sip, a smile creeping out from behind the rim.
+
+You smile back at her and she huffs a laugh. Suddenly her phone starts buzzing. 
+
+&quot;Aw crap,&quot; she growns as she reads the message,&quot;it&#39;s work, dumb rep stuff-you know how that goes. I gotta head out.&quot; She flags the waitress over to pay for her pie and coffee. You then walk with her out of the diner, helping her adjust the weight of her dufflebag. 
+
+&quot;Til next time~&quot; She winks before you part separate ways.
+
+[[Go back to Hotel and Sleep-&gt;Wendy Finale]]
+
+
+affection points: &lt;&lt;print $affection&gt;&gt;
+
+
+</tw-passagedata><tw-passagedata pid="69" name="I&#39;m not the best with conversation..." tags="" position="3010,829" size="100,100">&lt;&lt;set $affection -=5&gt;&gt;
+
+She grabs her cup again to take a sip, a smile creeping out from behind the rim.
+
+You smile back at her and she huffs a laugh. Suddenly her phone starts buzzing. 
+
+&quot;Aw crap,&quot; she growns as she reads the message,&quot;it&#39;s work, dumb rep stuff-you know how that goes. I gotta head out.&quot; She flags the waitress over to pay for her pie and coffee. You then walk with her out of the diner, helping her adjust the weight of her dufflebag. 
+
+&quot;Til next time~&quot; She winks before you part separate ways.
+
+[[Go back to Hotel and Sleep-&gt;Wendy Finale]]
+
+affection points: &lt;&lt;print $affection&gt;&gt;</tw-passagedata><tw-passagedata pid="70" name="Get up and leave." tags="" position="3156,808" size="100,100">
+You stand up and place a tip on the table. Leaving Wendy staring at you dumbfounded as you exit the door. 
+
+You decide to go to sleep once you return to your hotel and check out of your reservation early.
+
+Your boss is extremely upset over your lack of networking and fires you upon your return. 
+
+GAME OVER</tw-passagedata><tw-passagedata pid="71" name="Don&#39;t get pissed I just asked." tags="" position="2440,815" size="100,100">&lt;&lt;set $affection -=10&gt;&gt;
+
+You sit together in silence as Wendy eats her pie. The silence is only broken when the waitress comes back to refill her coffee cup. Once Wendy downs her last cup and pays you both part separate ways. 
+
+The ending was awkward to say the least. Maybe next time you can actually muster of the courage to talk...if there is a next time. 
+
+[[Go back to Hotel and Sleep-&gt;Wendy Finale]]
+
+affection points: &lt;&lt;print $affection&gt;&gt;</tw-passagedata><tw-passagedata pid="72" name="I mean we are competing brands, alls fair in love and franchise." tags="" position="2565,804" size="100,100">&lt;&lt;set $affection +=0&gt;&gt;
+
+Her brow furrows as she takes another sip of her coffee. 
+
+&quot;I guess so...&quot; She trails. She continues to stare out the window, her eyes glaze over, a somber blue like the sea on the cusp of a storm. 
+
+You sit together in silence as Wendy eats her pie, staying lost in her thoughts. The silence is only broken when the waitress comes back to refill her coffee cup. Once Wendy downs her last cup she pays and you both make your way to the exit. 
+
+&quot;See ya,&quot; she harkens flatly as she makes her way down the street. 
+
+[[Go back to Hotel and Sleep-&gt;Wendy Finale]]
+
+affection points: &lt;&lt;print $affection&gt;&gt;</tw-passagedata><tw-passagedata pid="73" name="Well, for the record, your hair looks way better than hers." tags="" position="2703,811" size="100,100">&lt;&lt;set $affection +=10&gt;&gt;
+
+She grabs her cup again to take a sip, a smile creeping out from behind the rim.  
+
+&quot;Good to know you&#39;ve got taste newbie.&quot;
+
+You smile back at her and she huffs a laugh. Suddenly her phone starts buzzing. 
+
+&quot;Aw crap,&quot; she growns as she reads the message,&quot;it&#39;s work, dumb rep stuff-you know how that goes. I gotta head out.&quot; She flags the waitress over to pay for her pie and coffee. You then walk with her out of the diner, helping her adjust the weight of her dufflebag. 
+
+&quot;Til next time~&quot; She winks before you part separate ways.
+
+[[Go back to Hotel and Sleep-&gt;Wendy Finale]]
+
+affection points: &lt;&lt;print $affection&gt;&gt;</tw-passagedata><tw-passagedata pid="74" name="If you&#39;re still clinging to the past then you haven&#39;t actually changed, just pretending to." tags="" position="2172,809" size="100,100">&lt;&lt;set $affection -=10&gt;&gt;
+
+&quot;You know, what the hell do you know newbie!.&quot; 
+
+Her eyes pierce you like blue knives as she grips her fork. she then drops her fork on the table to gulp down some coffee before pushing herself up from the table. 
+
+&quot;You know what I think I&#39;m done here. Call me when you&#39;re tired of being a pretentious asshole.&quot;
+
+She grabs her stuff and marches out the door. After a few minutes, the waitress comes buy with a check in hand.
+
+&quot;Sorry sweetie, but that pie still needs to be paid for.&quot;
+
+You begrudgingly pay Wendy&#39;s check before leaving.
+
+
+[[Go back to Hotel and Sleep-&gt;Wendy Finale]]
+
+affection points: &lt;&lt;print $affection&gt;&gt;</tw-passagedata><tw-passagedata pid="75" name="It&#39;s good to hold on to some things of the past. They remind you of where you came from." tags="" position="2052,804" size="100,100">
+- add something here
+
+
+[[Go back to Hotel and Sleep-&gt;Wendy Finale]]</tw-passagedata><tw-passagedata pid="76" name="Who we are now isn&#39;t who we were or who we will be. It helps to be happy with who you are in this moment." tags="" position="2285,804" size="100,100">&lt;&lt;set $affection +=10&gt;&gt;
+
+She grabs her cup again to take a sip, a smile creeping out from behind the rim. 
+
+&quot;Well I may not be perfect, but I&#39;d like to think I am happy. You know newbie, you&#39;ve got a good head on your shoulders.&quot;
+
+You smile back at her and she huffs a laugh. Suddenly her phone starts buzzing. 
+
+&quot;Aw crap,&quot; she groans as she reads the message,&quot;it&#39;s work, dumb rep stuff-you know how that goes. I gotta head out.&quot; She flags the waitress over to pay for her pie and coffee. You then walk with her out of the diner, helping her adjust the weight of her dufflebag. 
+
+&quot;Til next time~&quot; She winks before you part separate ways.
+
+[[Go back to Hotel and Sleep-&gt;Wendy Finale]]
+
+affection points: &lt;&lt;print $affection&gt;&gt;</tw-passagedata><tw-passagedata pid="77" name="Go Meet Wendy" tags="" position="2182,1485" size="100,100">You show up at exactly 9pm. Meanwhile Wendy shows up 15 past the hour. You watch the traffic go buy, effectively spacing out. For a minute you thought you heard her call your name...Well, her nickname for you. Frankly it would be nice to know if she actually knew your real name. 
+
+&quot;&lt;&lt;print $name&gt;&gt;!!&quot;
+
+You turn sharply around, startled by the call, and are greeted with eyes that glimmer like the west coast beaches. 
+
+&quot;Oh Hey-&quot;
+
+She puts her finger up to your lips to stop you from speaking, and you lose track of your thoughts as she smiles brightly at you. She leans in closer and you catch sight of all the little freckles that decorate her peachy face.
+
+&quot;Listen I got something to tell you ok,&quot; she begins. Her brow furrows in concentration as her cheeks redden. She looks mad, like shes going to beat you with her dufflebag. You&#39;re not sure what you did , but you raise your hands up in defense.
+
+&quot;Cool it, jeez!&quot; She retorts, leaning back a bit to give you some space. 
+
+&quot;I just wanted to like-I don&#39;t know. I really like you ok!&quot;
+
+She rubs her forehead as she contemplates her next words.
+
+&quot;Listen, I&#39;m not very good with the whole relationship-being real business. It&#39;s ain&#39;t my thing. And yeah I know I&#39;m much but...I feel we&#39;ve kinda got something you know...And I want to explore it. So what do you say we go hit up the diner again. Just you and me?&quot;
+
+
+[[Yes!]]
+
+[[I&#39;ll pass]]</tw-passagedata><tw-passagedata pid="78" name="Yes!" tags="" position="2107,1635" size="100,100">She smiles brightly and your heart melts as she grabs your hand to led the way. 
+
+&quot;It&#39;s a date then!&quot;
+
+GAME OVER
+YOU WIN</tw-passagedata><tw-passagedata pid="79" name="I&#39;ll pass" tags="" position="2257,1635" size="100,100">&quot;Oh..&quot; She stares at you, processing the words before looking down to the ground. She shoots her clenched fists into her pockets, as she turns around.
+
+&quot;Well who needs ya anyways...&quot;
+
+You watch as she walks down the sidewalk. Never once looking back. 
+
+GAME OVER
+YOU SUCK</tw-passagedata><tw-passagedata pid="80" name="Money" tags="first-date king" position="462.00000000000006,857.3333333333334" size="100,100">&lt;&lt;set $affection +=5&gt;&gt;
+
+Affection points: &lt;&lt;print $affection&gt;&gt;
+
+&quot;I want to be rich. I enjoy the finer things in life and I want to have all the money I can so I can buy the things I want.I guess you can atest to that.&quot; You say refernceing to the restaurant and the wine. &quot;And that&#39;s not a bad thing; you have to be able to support your loves in life. I just happen to love expensive things.&quot;
+
+He moves his head in contemplation. &quot;I can understand that. No, that&#39;s completely fair. It&#39;s good that you don&#39;t have the desire to rely on others for that support. You are self made.&quot;
+
+You smile. &quot;Well thank you. One must learn to rely on themselves before relying on others.&quot; He smiles.
+
+You both spend the rest of the night talking about the different expensive stores that you both like going to and the finer things in life. He tells you about his thousand dollar suits and clothes. You tell him of all your expensive jewelry.
+
+Soon the restaurant is closing so you both go back to the limousine and the driver takes you back to the hotel. You both part ways with a gentle hug. He waves goodbye as you walk through the doors of the hotel.
+
+[[King Finale]] </tw-passagedata><tw-passagedata pid="81" name="Fame" tags="" position="478.6666666666667,1000.6666666666669" size="100,100">&lt;&lt;set $affection -=5&gt;&gt;
+
+Affection points: &lt;&lt;print $affection&gt;&gt;
+
+&quot;I want to be famous. Ever since I was young, I wanted to be the most admired. With this business, I can finally achieve that. Ever since I could remember, I wanted to make a name for myself. I don&#39;t even know why If I&#39;m being honest. I have just always felt deep down that I was destined for something greater, you know?&quot;
+
+He contemplates for a moment. &quot;Well, I have no desire for fame; however, I do suppose I can understand where you&#39;re coming from. Everyone wants to be remembered for something they did. Some by the few people they held close in this life. Others, such as yourself, by as many people as possible.&quot;
+
+You give a half smile at his acknowledgment. &quot;Thank you.&quot; 
+
+You too continue to talk for the rest of the night. Some things simple questions and some deeper, gathering  a deeper understanding and appreciation for each other. 
+
+Soon the restaurant is closing so you both go back to the limousine and the driver takes you back to the hotel. You both part ways with a gentle hug. He waves goodbye as you walk through the doors of the hotel.
+
+[[King Finale]] </tw-passagedata><tw-passagedata pid="82" name="Family" tags="" position="587,879" size="100,100">&lt;&lt;set $affection +=10&gt;&gt;
+
+&quot;Well it was really my family. We would always cook as a family and my father&#39;s specialty was burgers. He always wanted to own his own business but knew he couldn&#39;t. Soon he grew too old too. So I decided to open this business in honor of him using his recipe.&quot;
+
+The King smiles whole-heartedly at you. 
+
+&quot;That&#39;s so sweet. You and your father must be really close.&quot; 
+
+You begin to tell him how close you two are. Including all of the mischievous things that you used to do with him as a kid like popping fireworks in the backyard to scare the neighbors and things of that such. In return, he told you of all the embarrassing stories from his childhood. Like the time him and his older brother thought it would be cute to cover the entire house in toilet paper but ran out on the top floor or whenever he would try to cook as a kid and ended up just mixing random ingredents together.
+
+Time flies by so quickly. Soon the restaurant is closing. You both walk back to the limousine, hand in hand. You two continue giggling about your childhood shinanigans on the ride back to the hotel. The driver drops you back off at your hotel and walks you to the door. Before you you both say goodnight, he takes your hand and kisses it lightly. You blush deeply at the bold show of affection. He snickers at this and walks back to the car.
+
+&quot;Sweet dreams moi amour.&quot;
+
+[[King Finale]] 
+
+
+</tw-passagedata><tw-passagedata pid="83" name="Nothing else better" tags="" position="607,1010.6666666666666" size="100,100">&lt;&lt;set $affection -=10&gt;&gt;
+
+Affection points: &lt;&lt;print $affection&gt;&gt;
+
+&quot;I&#39;m not really sure why I decided to start this business. It&#39;s not like I had much else to do. It seemed like the best option for me at the time and still does. I hope that having this business will kind of help me find myself.&quot;
+
+He looks at you with wide eyes and suprised. He takes a moment zoning out thinking about what you said. &quot;Wow. Now that&#39;s a response I was not prepared for.&quot; He chuckles. &quot;Well I hope you are able to find yourself through your soon to be thriving business.&quot; He grabs his glass of wine to toast with you.
+
+You both continue to talk about simple likes and dislikes, getting to know more about each other. You begin to learn that you both actually have a lot in common as far as food and hobbies go. You enjoy finding someone like-minded in thought. 
+
+You both continue to talk more and more until it;s closing time for the restaurant. You both go back to the limousine and the driver takes you back to the hotel. You both part ways with a gentle hug. He waves goodbye as you walk through the doors of the hotel.
+
+[[King Finale]] </tw-passagedata><tw-passagedata pid="84" name="No!" tags="" position="707,839" size="100,100">&lt;&lt;set $affection +=5&gt;&gt;
+
+Affection points: &lt;&lt;print $affection&gt;&gt;
+
+&quot;No no no! I was just wondering! I&#39;m sorry. I&#39;m just not used to being in places like this as you could tell earlier.&quot; You let out a nervous chuckle. &quot;I wasn&#39;t judging you at all. I&#39;m sorry if it came off that way. I was just wondering if you just chose this because of the date or just generally like restaurants like this.&quot; 
+
+He seems to look a lot calmer. &quot;Well I apologize for jumping to conclusions. But I really do just enjoy the more expensive things in life. They have always drawn me in. Of course, it&#39;s most likely because of my childhood.&quot;
+
+You both talk about little things from your childhood. It&#39;s really nice to hear about the different way that he grew up from you. There are so many differences between you too but you can also feel a strange connection from difference.
+
+Soon the restaurant is closing so you both go back to the limousine and the driver takes you back to the hotel. You both part ways with a gentle hug. He waves goodbye as you walk through the doors of the hotel.
+
+[[King Finale]] </tw-passagedata><tw-passagedata pid="85" name="Well...Kinda." tags="" position="827,839" size="100,100">&lt;&lt;set $affection -=10&gt;&gt;
+
+Affection points: &lt;&lt;print $affection&gt;&gt;
+
+&quot;Well...I mean..I don&#39;t know. There&#39;s like a million better ways that you could be using your money. Like you could just go to a cheaper place and spend what money you would have spent on a place like this on a charity or something. Places like these are nice but I think being able to give to others would be a much better use of your money.&quot;
+
+&quot;Well, I didn&#39;t realize this was a financial meeting to discuss the different ways that I could make better use of the money that I make.&quot;
+
+The jab hurts a tad, but you stand strong in your resolve. You truly believe that it is better to give than to waste your money on needless expensives. His phone begins to ring.
+
+&quot;Excuse me.&quot; He gets up and takes the call. He comes back after a few minutes. &quot;Well I apologize but I have business to attend to. The car outside will take you back to your hotel; I&#39;ll catch a cab. Until next time.&quot; He waves you off and walks to catch his cab outside.
+
+[[King Finale]] </tw-passagedata><tw-passagedata pid="86" name="&quot;French&quot;" tags="" position="892,982.3333333333334" size="100,100">&lt;&lt;set $affection +=10&gt;&gt;
+
+Affection points: &lt;&lt;print $affection&gt;&gt;
+
+&quot;Actually, I love French food. We seem to have the same favorite dish as a child. My mom would have this special way of making it that always made it just a tad bit spicey like my father and I loved it.&quot;
+
+You see the king smile brightly and let out a lighthearted deep chuckle. 
+
+&quot;Wow I find it amazing how we both could have the same favorite dish! That must mean it was the dish made for childhoods. I remember each time my favorite made would make it, her name was Jessica, I would eat every little bit of it. Even drink the broth until the bowl was clean.&quot;
+
+You chuckle at his story. You two continue to chat about french dishes and different things about the culture. 
+
+Before you both know it hours, have gone by and the waiter comes over to tell you both that they are getting ready to close. You both get up and go back to the limousine. He drops you back off at your hotel and walks you to the door. Before you you both say goodnight, he takes your hand and kisses it lightly. You blush deeply at the bold show of affection. He snickers at this and walks back to the car.
+
+[[King Finale]] 
+</tw-passagedata><tw-passagedata pid="87" name="&quot;American&quot;" tags="" position="1012,982.3333333333334" size="100,100">&lt;&lt;set $affection -=10&gt;&gt;
+
+Affection points: &lt;&lt;print $affection&gt;&gt;
+
+&quot;I love simple foods such as chili or even burgers. They remind me of those summer days when I used to grill outside with my father.
+
+You see a slight look of disgust on his face. 
+
+&quot;I..much perfer the finer things in life. Although I own a business that makes those types of foods, I believe myself to have a better pallet than those who choose those foods. However, I do believe it is very sweet why you do enjoy those foods.&quot;
+
+You two make small talk about family until the food comes. You thank him for helping you choose. He smiles and begins to talk about the best things on the menu. 
+
+You both talk for a little longer after finishing the food. You both walk back to the limousine and he has the chauffeur drop you off at the hotel.
+
+[[King Finale]] </tw-passagedata><tw-passagedata pid="88" name="&quot;Hispanic&quot;" tags="" position="936.6666666666666,869.3333333333333" size="100,100">&lt;&lt;set $affection +=5&gt;&gt;
+
+Affection points: &lt;&lt;print $affection&gt;&gt;
+
+&quot;I love Hispanic food. Tacos are my favorite. But not americanized tacos. I love the authentic hispanic tacos. You know it&#39;s the type where they let the thin meat marinate for a while then cook it and add the other stuff.&quot;
+
+A look of confusion but curiosity peaks on his face. 
+
+&quot;I don&#39;t think I have ever tried tacos like that. If you say that they&#39;re good then I will try it.&quot; He smiles lightly.
+
+You begin to explain different things about the culture to him and the food. He looks intrigued by the things you say and shows complete curiosity to learn more. You talk for a couple of hours and then the both of you walk back to the limousine. He has the chauffeur drop you off at the hotel and waves you goodnight as the car pulls off.
+
+[[King Finale]] </tw-passagedata><tw-passagedata pid="89" name="&quot;Asian&quot;" tags="" position="1038.3333333333333,872.6666666666666" size="100,100">Affection points: &lt;&lt;print $affection&gt;&gt;
+
+The King nods his head in acknowledgement. 
+
+&quot;Personally, I don&#39;t really like food of Asian culture. I&#39;ve never known why, just really never peaked my interest.&quot;
+
+You frown slightly in disappointment. You both pass the time by talking about your likes and dislikes. You two eat the food and you thank him again for helping you in your moment of indecisiveness. 
+
+An hour or two go by and you both walk back to the limousine and he has the chauffeur take you back to the hotel. He waves goodbye as the car drives away.
+
+[[King Finale]] </tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">
 	/*! SugarCube JS */
 	if(document.documentElement.getAttribute("data-init")==="loading"){!function(window,document,jQuery,undefined){"use strict";function _classCallCheck(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,r=Array(e.length);t<e.length;t++)r[t]=e[t];return r}return Array.from(e)}var _createClass=function(){function e(e,t){for(var r=0;r<t.length;r++){var n=t[r];n.enumerable=n.enumerable||!1,n.configurable=!0,"value"in n&&(n.writable=!0),Object.defineProperty(e,n.key,n)}}return function(t,r,n){return r&&e(t.prototype,r),n&&e(t,n),t}}(),_slicedToArray=function(){function e(e,t){var r=[],n=!0,a=!1,i=undefined;try{for(var o,s=e[Symbol.iterator]();!(n=(o=s.next()).done)&&(r.push(o.value),!t||r.length!==t);n=!0);}catch(e){a=!0,i=e}finally{try{!n&&s.return&&s.return()}finally{if(a)throw i}}return r}return function(t,r){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,r);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},errorPrologRegExp=/^(?:(?:uncaught\s+(?:exception:\s+)?)?\w*(?:error|exception|_err):\s+)+/i,Alert=function(){function e(e,t,r,n){var a="fatal"===e,i="Apologies! "+(a?"A fatal":"An")+" error has occurred.";i+=a?" Aborting.":" You may be able to continue, but some parts may not work properly.",null==t&&null==r||(i+="\n\nError",null!=t&&(i+=" ["+t+"]"),i+=null!=r?": "+r.replace(errorPrologRegExp,"")+".":": unknown error."),"object"===(void 0===n?"undefined":_typeof(n))&&n.stack&&(i+="\n\nStack Trace:\n"+n.stack),window.alert(i)}function t(t,r,n){e(null,t,r,n)}function r(t,r,n){e("fatal",t,r,n)}return function(e){window.onerror=function(n,a,i,o,s){"complete"===document.readyState?t(null,n,s):(r(null,n,s),window.onerror=e,"function"==typeof window.onerror&&window.onerror.apply(this,arguments))}}(window.onerror),Object.freeze(Object.defineProperties({},{error:{value:t},fatal:{value:r}}))}(),Patterns=function(){var e=function(){var e=new Map([[" ","\\u0020"],["\f","\\f"],["\n","\\n"],["\r","\\r"],["\t","\\t"],["\v","\\v"],[" ","\\u00a0"],[" ","\\u1680"],["᠎","\\u180e"],[" ","\\u2000"],[" ","\\u2001"],[" ","\\u2002"],[" ","\\u2003"],[" ","\\u2004"],[" ","\\u2005"],[" ","\\u2006"],[" ","\\u2007"],[" ","\\u2008"],[" ","\\u2009"],[" ","\\u200a"],["\u2028","\\u2028"],["\u2029","\\u2029"],[" ","\\u202f"],[" ","\\u205f"],["　","\\u3000"],["\ufeff","\\ufeff"]]),t=/^\s$/,r="";return e.forEach(function(e,n){t.test(n)||(r+=e)}),r?"[\\s"+r+"]":"\\s"}(),t="\\s"===e?"\\S":e.replace(/^\[/,"[^"),r="[0-9A-Z_a-z\\-\\u00c0-\\u00d6\\u00d8-\\u00f6\\u00f8-\\u00ff\\u0150\\u0170\\u0151\\u0171]",n=r.replace("\\-",""),a=function(){return"("+r+"+)\\(([^\\)\\|\\n]+)\\):|("+r+"+):([^;\\|\\n]+);|((?:\\."+r+"+)+);|((?:#"+r+"+)+);"}();return Object.freeze({space:e,spaceNoTerminator:"[\\u0020\\f\\t\\v\\u00a0\\u1680\\u180e\\u2000-\\u200a\\u202f\\u205f\\u3000\\ufeff]",lineTerminator:"[\\n\\r\\u2028\\u2029]",notSpace:t,anyChar:"(?:.|[\\n\\r\\u2028\\u2029])",anyLetter:r,anyLetterStrict:n,identifierFirstChar:"[$A-Z_a-z]",identifierNextChar:"[$0-9A-Z_a-z]",identifier:"[$A-Z_a-z][$0-9A-Z_a-z]*",variableSigil:"[$_]",variable:"[$_][$A-Z_a-z][$0-9A-Z_a-z]*",macroName:"[A-Za-z][\\w-]*|[=-]",templateName:"[A-Za-z][\\w-]*",cssImage:"\\[[<>]?[Ii][Mm][Gg]\\[(?:\\s|\\S)*?\\]\\]+",inlineCss:a,url:"(?:file|https?|mailto|ftp|javascript|irc|news|data):[^\\s'\"]+"})}();!function(){!function(e){if(e&&e.prototype&&null==e.prototype.firstElementChild){var t=Node.ELEMENT_NODE;Object.defineProperty(e.prototype,"firstElementChild",{get:function(){for(var e=this.childNodes,r=0;r<e.length;++r){var n=e[r];if(n.nodeType===t)return n}return null}})}}(window.Node||window.Element)}(),function(){function e(e,t){var r=Number.parseInt(e,10)||0;if(r<1)return"";var n=void 0===t?"":String(t);for(""===n&&(n=" ");n.length<r;){var a=n.length,i=r-a;n+=a>i?n.slice(0,i):n}return n.length>r&&(n=n.slice(0,r)),n}var t=function(){function e(e,n){var a=String(e);if(!a)return a;switch(n){case"start":return t.test(a)?a.replace(t,""):a;case"end":return r.test(a)?a.replace(r,""):a;default:throw new Error('_trimString called with incorrect where parameter value: "'+n+'"')}}var t=new RegExp("^"+Patterns.space+Patterns.space+"*"),r=new RegExp(""+Patterns.space+Patterns.space+"*$");return e}();Array.prototype.flat||Object.defineProperty(Array.prototype,"flat",{configurable:!0,writable:!0,value:function(){function e(){if(null==this)throw new TypeError("Array.prototype.flat called on null or undefined");var t=0===arguments.length?1:Number(arguments[0])||0;return t<1?Array.prototype.slice.call(this):Array.prototype.reduce.call(this,function(r,n){return n instanceof Array?r.push.apply(r,_toConsumableArray(e.call(n,t-1))):r.push(n),r},[])}return e}()}),Array.prototype.flatMap||Object.defineProperty(Array.prototype,"flatMap",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.flatMap called on null or undefined");return Array.prototype.map.apply(this,arguments).flat()}}),Array.prototype.includes||Object.defineProperty(Array.prototype,"includes",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.includes called on null or undefined");if(0===arguments.length)return!1;var e=this.length>>>0;if(0===e)return!1;var t=arguments[0],r=Number(arguments[1])||0;for(r<0&&(r=Math.max(0,e+r));r<e;++r){var n=this[r];if(n===t||n!==n&&t!==t)return!0}return!1}}),Object.entries||Object.defineProperty(Object,"entries",{configurable:!0,writable:!0,value:function(e){if("object"!==(void 0===e?"undefined":_typeof(e))||null===e)throw new TypeError("Object.entries object parameter must be an object");return Object.keys(e).map(function(t){return[t,e[t]]})}}),Object.fromEntries||Object.defineProperty(Object,"fromEntries",{configurable:!0,writable:!0,value:function(e){return Array.from(e).reduce(function(e,t){if(Object(t)!==t)throw new TypeError("Object.fromEntries iterable parameter must yield objects");return t[0]in e?Object.defineProperty(e,t[0],{configurable:!0,enumerable:!0,writable:!0,value:t[1]}):e[t[0]]=t[1],e},{})}}),Object.getOwnPropertyDescriptors||Object.defineProperty(Object,"getOwnPropertyDescriptors",{configurable:!0,writable:!0,value:function(e){if(null==e)throw new TypeError("Object.getOwnPropertyDescriptors object parameter is null or undefined");var t=Object(e);return Reflect.ownKeys(t).reduce(function(e,r){var n=Object.getOwnPropertyDescriptor(t,r);return void 0!==n&&(r in e?Object.defineProperty(e,r,{configurable:!0,enumerable:!0,writable:!0,value:n}):e[r]=n),e},{})}}),Object.values||Object.defineProperty(Object,"values",{configurable:!0,writable:!0,value:function(e){if("object"!==(void 0===e?"undefined":_typeof(e))||null===e)throw new TypeError("Object.values object parameter must be an object");return Object.keys(e).map(function(t){return e[t]})}}),String.prototype.padStart||Object.defineProperty(String.prototype,"padStart",{configurable:!0,writable:!0,value:function(t,r){if(null==this)throw new TypeError("String.prototype.padStart called on null or undefined");var n=String(this),a=n.length,i=Number.parseInt(t,10);return i<=a?n:e(i-a,r)+n}}),String.prototype.padEnd||Object.defineProperty(String.prototype,"padEnd",{configurable:!0,writable:!0,value:function(t,r){if(null==this)throw new TypeError("String.prototype.padEnd called on null or undefined");var n=String(this),a=n.length,i=Number.parseInt(t,10);return i<=a?n:n+e(i-a,r)}}),String.prototype.trimStart||Object.defineProperty(String.prototype,"trimStart",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.trimStart called on null or undefined");return t(this,"start")}}),String.prototype.trimLeft||Object.defineProperty(String.prototype,"trimLeft",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.trimLeft called on null or undefined");return t(this,"start")}}),String.prototype.trimEnd||Object.defineProperty(String.prototype,"trimEnd",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.trimEnd called on null or undefined");return t(this,"end")}}),String.prototype.trimRight||Object.defineProperty(String.prototype,"trimRight",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.trimRight called on null or undefined");return t(this,"end")}})}(),function(){function _random(){var e=void 0,t=void 0;switch(arguments.length){case 0:throw new Error("_random called with insufficient parameters");case 1:e=0,t=arguments[0];break;default:e=arguments[0],t=arguments[1]}if(e>t){var r=[t,e];e=r[0],t=r[1]}return Math.floor(_nativeMathRandom()*(t-e+1))+e}function _randomIndex(e,t){var r=void 0,n=void 0;switch(t.length){case 1:r=0,n=e-1;break;case 2:r=0,n=Math.trunc(t[1]);break;default:r=Math.trunc(t[1]),n=Math.trunc(t[2])}return Number.isNaN(r)?r=0:!Number.isFinite(r)||r>=e?r=e-1:r<0&&(r=e+r)<0&&(r=0),Number.isNaN(n)?n=0:!Number.isFinite(n)||n>=e?n=e-1:n<0&&(n=e+n)<0&&(n=e-1),_random(r,n)}function _getCodePointStartAndEnd(e,t){var r=e.charCodeAt(t);if(Number.isNaN(r))return{char:"",start:-1,end:-1};if(r<55296||r>57343)return{char:e.charAt(t),start:t,end:t};if(r>=55296&&r<=56319){var n=t+1;if(n>=e.length)throw new Error("high surrogate without trailing low surrogate");var a=e.charCodeAt(n);if(a<56320||a>57343)throw new Error("high surrogate without trailing low surrogate");return{char:e.charAt(t)+e.charAt(n),start:t,end:n}}if(0===t)throw new Error("low surrogate without leading high surrogate");var i=t-1,o=e.charCodeAt(i);if(o<55296||o>56319)throw new Error("low surrogate without leading high surrogate");return{char:e.charAt(i)+e.charAt(t),start:i,end:t}}var _nativeMathRandom=Math.random;Object.defineProperty(Array,"random",{configurable:!0,writable:!0,value:function(e){if("object"!==(void 0===e?"undefined":_typeof(e))||null===e||!Object.prototype.hasOwnProperty.call(e,"length"))throw new TypeError("Array.random array parameter must be an array or array-lke object");var t=e.length>>>0;if(0!==t){return e[0===arguments.length?_random(0,t-1):_randomIndex(t,Array.prototype.slice.call(arguments,1))]}}}),Object.defineProperty(Array.prototype,"concatUnique",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.concatUnique called on null or undefined");var e=Array.from(this);if(0===arguments.length)return e;var t=Array.prototype.reduce.call(arguments,function(e,t){return e.concat(t)},[]),r=t.length;if(0===r)return e;for(var n=Array.prototype.indexOf,a=Array.prototype.push,i=0;i<r;++i){var o=t[i];-1===n.call(e,o)&&a.call(e,o)}return e}}),Object.defineProperty(Array.prototype,"count",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.count called on null or undefined");for(var e=Array.prototype.indexOf,t=arguments[0],r=Number(arguments[1])||0,n=0;-1!==(r=e.call(this,t,r));)++n,++r;return n}}),Object.defineProperty(Array.prototype,"delete",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.delete called on null or undefined");if(0===arguments.length)return[];var e=this.length>>>0;if(0===e)return[];for(var t=Array.prototype.concat.apply([],arguments),r=t.length,n=[],a=0;a<e;++a)for(var i=this[a],o=0;o<r;++o){var s=t[o];if(i===s||i!==i&&s!==s){n.push(a);break}}for(var u=[],l=0,c=n.length;l<c;++l)u[l]=this[n[l]];for(var d=Array.prototype.splice,f=n.length-1;f>=0;--f)d.call(this,n[f],1);return u}}),Object.defineProperty(Array.prototype,"deleteAt",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.deleteAt called on null or undefined");if(0===arguments.length)return[];var e=this.length>>>0;if(0===e)return[];for(var t=Array.prototype.splice,r=[].concat(_toConsumableArray(new Set(Array.prototype.concat.apply([],arguments).map(function(t){return t<0?Math.max(0,e+t):t})).values())),n=[].concat(_toConsumableArray(r)).sort(function(e,t){return t-e}),a=[],i=0,o=r.length;i<o;++i)a[i]=this[r[i]];for(var s=0,u=n.length;s<u;++s)t.call(this,n[s],1);return a}}),Object.defineProperty(Array.prototype,"deleteWith",{configurable:!0,writable:!0,value:function(e,t){if(null==this)throw new TypeError("Array.prototype.deleteWith called on null or undefined");if("function"!=typeof e)throw new Error("Array.prototype.deleteWith predicate parameter must be a function");var r=this.length>>>0;if(0===r)return[];for(var n=Array.prototype.splice,a=[],i=[],o=0;o<r;++o)e.call(t,this[o],o,this)&&(i.push(this[o]),a.push(o));for(var s=a.length-1;s>=0;--s)n.call(this,a[s],1);return i}}),Object.defineProperty(Array.prototype,"first",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.first called on null or undefined");if(0!=this.length>>>0)return this[0]}}),Object.defineProperty(Array.prototype,"includesAll",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.includesAll called on null or undefined");if(1===arguments.length)return Array.isArray(arguments[0])?Array.prototype.includesAll.apply(this,arguments[0]):Array.prototype.includes.apply(this,arguments);for(var e=0,t=arguments.length;e<t;++e)if(!Array.prototype.some.call(this,function(e){return e===this.val||e!==e&&this.val!==this.val},{val:arguments[e]}))return!1;return!0}}),Object.defineProperty(Array.prototype,"includesAny",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.includesAny called on null or undefined");if(1===arguments.length)return Array.isArray(arguments[0])?Array.prototype.includesAny.apply(this,arguments[0]):Array.prototype.includes.apply(this,arguments);for(var e=0,t=arguments.length;e<t;++e)if(Array.prototype.some.call(this,function(e){return e===this.val||e!==e&&this.val!==this.val},{val:arguments[e]}))return!0;return!1}}),Object.defineProperty(Array.prototype,"last",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.last called on null or undefined");var e=this.length>>>0;if(0!==e)return this[e-1]}}),Object.defineProperty(Array.prototype,"pluck",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.pluck called on null or undefined");var e=this.length>>>0;if(0!==e){var t=0===arguments.length?_random(0,e-1):_randomIndex(e,[].concat(Array.prototype.slice.call(arguments)));return Array.prototype.splice.call(this,t,1)[0]}}}),Object.defineProperty(Array.prototype,"pluckMany",{configurable:!0,writable:!0,value:function(e){if(null==this)throw new TypeError("Array.prototype.pluckMany called on null or undefined");var t=this.length>>>0;if(0===t)return[];var r=Math.trunc(e);if(!Number.isInteger(r))throw new Error("Array.prototype.pluckMany want parameter must be an integer");if(r<1)return[];r>t&&(r=t);var n=Array.prototype.splice,a=[],i=t-1;do{a.push(n.call(this,_random(0,i--),1)[0])}while(a.length<r);return a}}),Object.defineProperty(Array.prototype,"pushUnique",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.pushUnique called on null or undefined");var e=arguments.length;if(0===e)return this.length>>>0;for(var t=Array.prototype.indexOf,r=Array.prototype.push,n=0;n<e;++n){var a=arguments[n];-1===t.call(this,a)&&r.call(this,a)}return this.length>>>0}}),Object.defineProperty(Array.prototype,"random",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.random called on null or undefined");var e=this.length>>>0;if(0!==e){return this[0===arguments.length?_random(0,e-1):_randomIndex(e,[].concat(Array.prototype.slice.call(arguments)))]}}}),Object.defineProperty(Array.prototype,"randomMany",{configurable:!0,writable:!0,value:function(e){if(null==this)throw new TypeError("Array.prototype.randomMany called on null or undefined");var t=this.length>>>0;if(0===t)return[];var r=Math.trunc(e);if(!Number.isInteger(r))throw new Error("Array.prototype.randomMany want parameter must be an integer");if(r<1)return[];r>t&&(r=t);var n=new Map,a=[],i=t-1;do{var o=void 0;do{o=_random(0,i)}while(n.has(o));n.set(o,!0),a.push(this[o])}while(a.length<r);return a}}),Object.defineProperty(Array.prototype,"shuffle",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.shuffle called on null or undefined");var e=this.length>>>0;if(0===e)return this;for(var t=e-1;t>0;--t){var r=Math.floor(_nativeMathRandom()*(t+1));if(t!==r){var n=this[t];this[t]=this[r],this[r]=n}}return this}}),Object.defineProperty(Array.prototype,"unshiftUnique",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.unshiftUnique called on null or undefined");var e=arguments.length;if(0===e)return this.length>>>0;for(var t=Array.prototype.indexOf,r=Array.prototype.unshift,n=0;n<e;++n){var a=arguments[n];-1===t.call(this,a)&&r.call(this,a)}return this.length>>>0}}),Object.defineProperty(Function.prototype,"partial",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Function.prototype.partial called on null or undefined");var e=Array.prototype.slice,t=this,r=e.call(arguments,0);return function(){for(var n=[],a=0,i=0;i<r.length;++i)n.push(r[i]===undefined?arguments[a++]:r[i]);return t.apply(this,n.concat(e.call(arguments,a)))}}}),Object.defineProperty(Math,"clamp",{configurable:!0,writable:!0,value:function(e,t,r){var n=Number(e);return Number.isNaN(n)?NaN:n.clamp(t,r)}}),Object.defineProperty(Math,"easeInOut",{configurable:!0,writable:!0,value:function(e){return 1-(Math.cos(Number(e)*Math.PI)+1)/2}}),Object.defineProperty(Number.prototype,"clamp",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Number.prototype.clamp called on null or undefined");if(2!==arguments.length)throw new Error("Number.prototype.clamp called with an incorrect number of parameters");var e=Number(arguments[0]),t=Number(arguments[1]);if(e>t){var r=[t,e];e=r[0],t=r[1]}return Math.min(Math.max(this,e),t)}}),RegExp.escape||function(){var e=/[\\^$*+?.()|[\]{}]/g,t=new RegExp(e.source);Object.defineProperty(RegExp,"escape",{configurable:!0,writable:!0,value:function(r){var n=String(r);return n&&t.test(n)?n.replace(e,"\\$&"):n}})}(),function(){var e=/{(\d+)(?:,([+-]?\d+))?}/g,t=new RegExp(e.source);Object.defineProperty(String,"format",{configurable:!0,writable:!0,value:function(r){function n(e,t,r){if(!t)return e;var n=Math.abs(t)-e.length;if(n<1)return e;var a=String(r).repeat(n);return t<0?e+a:a+e}if(arguments.length<2)return 0===arguments.length?"":r;var a=2===arguments.length&&Array.isArray(arguments[1])?[].concat(_toConsumableArray(arguments[1])):Array.prototype.slice.call(arguments,1);return 0===a.length?r:t.test(r)?(e.lastIndex=0,r.replace(e,function(e,t,r){var i=a[t];if(null==i)return"";for(;"function"==typeof i;)i=i();switch(void 0===i?"undefined":_typeof(i)){case"string":break;case"object":i=JSON.stringify(i);break;default:i=String(i)}return n(i,r?Number.parseInt(r,10):0," ")})):r}})}(),Object.defineProperty(String.prototype,"contains",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.contains called on null or undefined");return-1!==String.prototype.indexOf.apply(this,arguments)}}),Object.defineProperty(String.prototype,"count",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.count called on null or undefined");var e=String(arguments[0]||"");if(""===e)return 0;for(var t=String.prototype.indexOf,r=e.length,n=Number(arguments[1])||0,a=0;-1!==(n=t.call(this,e,n));)++a,n+=r;return a}}),Object.defineProperty(String.prototype,"first",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.first called on null or undefined");return _getCodePointStartAndEnd(String(this),0).char}}),Object.defineProperty(String.prototype,"last",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.last called on null or undefined");var e=String(this);return _getCodePointStartAndEnd(e,e.length-1).char}}),Object.defineProperty(String.prototype,"splice",{configurable:!0,writable:!0,value:function(e,t,r){if(null==this)throw new TypeError("String.prototype.splice called on null or undefined");var n=this.length>>>0;if(0===n)return"";var a=Number(e);Number.isSafeInteger(a)?a<0&&(a+=n)<0&&(a=0):a=0,a>n&&(a=n);var i=Number(t);(!Number.isSafeInteger(i)||i<0)&&(i=0);var o=this.slice(0,a);return void 0!==r&&(o+=r),a+i<n&&(o+=this.slice(a+i)),o}}),Object.defineProperty(String.prototype,"splitOrEmpty",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.splitOrEmpty called on null or undefined");return""===String(this)?[]:String.prototype.split.apply(this,arguments)}}),Object.defineProperty(String.prototype,"toLocaleUpperFirst",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.toLocaleUpperFirst called on null or undefined");var e=String(this),t=_getCodePointStartAndEnd(e,0),r=t.char,n=t.end;return-1===n?"":r.toLocaleUpperCase()+e.slice(n+1)}}),Object.defineProperty(String.prototype,"toUpperFirst",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.toUpperFirst called on null or undefined");var e=String(this),t=_getCodePointStartAndEnd(e,0),r=t.char,n=t.end;return-1===n?"":r.toUpperCase()+e.slice(n+1)}}),Object.defineProperty(Date.prototype,"toJSON",{configurable:!0,writable:!0,value:function(){return["(revive:date)",this.toISOString()]}}),Object.defineProperty(Function.prototype,"toJSON",{configurable:!0,writable:!0,value:function(){return["(revive:eval)","("+this.toString()+")"]}}),Object.defineProperty(Map.prototype,"toJSON",{configurable:!0,writable:!0,value:function(){return["(revive:map)",[].concat(_toConsumableArray(this))]}}),Object.defineProperty(RegExp.prototype,"toJSON",{configurable:!0,writable:!0,value:function(){return["(revive:eval)",this.toString()]}}),Object.defineProperty(Set.prototype,"toJSON",{configurable:!0,writable:!0,value:function(){return["(revive:set)",[].concat(_toConsumableArray(this))]}}),Object.defineProperty(JSON,"reviveWrapper",{configurable:!0,writable:!0,value:function(e,t){if("string"!=typeof e)throw new TypeError("JSON.reviveWrapper code parameter must be a string");return["(revive:eval)",[e,t]]}}),Object.defineProperty(JSON,"_real_parse",{value:JSON.parse}),Object.defineProperty(JSON,"parse",{configurable:!0,writable:!0,value:function value(text,reviver){return JSON._real_parse(text,function(key,val){var value=val;if(Array.isArray(value)&&2===value.length)switch(value[0]){case"(revive:set)":value=new Set(value[1]);break;case"(revive:map)":value=new Map(value[1]);break;case"(revive:date)":value=new Date(value[1]);break;case"(revive:eval)":try{if(Array.isArray(value[1])){var $ReviveData$=value[1][1];value=eval(value[1][0])}else value=eval(value[1])}catch(e){}}else if("string"==typeof value&&"@@revive@@"===value.slice(0,10))try{value=eval(value.slice(10))}catch(e){}if("function"==typeof reviver)try{value=reviver(key,value)}catch(e){}return value})}}),Object.defineProperty(Array.prototype,"contains",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.contains called on null or undefined");return Array.prototype.includes.apply(this,arguments)}}),Object.defineProperty(Array.prototype,"containsAll",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.containsAll called on null or undefined");return Array.prototype.includesAll.apply(this,arguments)}}),Object.defineProperty(Array.prototype,"containsAny",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.containsAny called on null or undefined");return Array.prototype.includesAny.apply(this,arguments)}}),Object.defineProperty(Array.prototype,"flatten",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.flatten called on null or undefined");return Array.prototype.flat.call(this,1/0)}}),Object.defineProperty(String.prototype,"readBracketedList",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.readBracketedList called on null or undefined");for(var e=new RegExp("(?:\\[\\[((?:\\s|\\S)*?)\\]\\])|([^\"'\\s]\\S*)","gm"),t=[],r=void 0;null!==(r=e.exec(this));)r[1]?t.push(r[1]):r[2]&&t.push(r[2]);return t}})}();var Browser=function(){var e=navigator.userAgent.toLowerCase(),t=e.includes("windows phone"),r=Object.freeze({Android:!t&&e.includes("android"),BlackBerry:/blackberry|bb10/.test(e),iOS:!t&&/ip(?:hone|ad|od)/.test(e),Opera:!t&&("object"===_typeof(window.operamini)||e.includes("opera mini")),Windows:t||/iemobile|wpdesktop/.test(e),any:function(){return r.Android||r.BlackBerry||r.iOS||r.Opera||r.Windows}}),n=!r.Windows&&!/khtml|trident|edge/.test(e)&&e.includes("gecko"),a=!e.includes("opera")&&/msie|trident/.test(e),i=a?function(){var t=/(?:msie\s+|rv:)(\d+\.\d)/.exec(e);return t?Number(t[1]):0}():null,o=e.includes("opera")||e.includes(" opr/"),s=o?function(){var t=new RegExp((/khtml|chrome/.test(e)?"opr":"version")+"\\/(\\d+\\.\\d+)"),r=t.exec(e);return r?Number(r[1]):0}():null,u=e.includes("vivaldi");return Object.freeze({userAgent:e,isMobile:r,isGecko:n,isIE:a,ieVersion:i,isOpera:o,operaVersion:s,isVivaldi:u})}(),Has=function(){var e=function(){try{return"function"==typeof document.createElement("audio").canPlayType}catch(e){}return!1}(),t=e&&function(){try{var e=document.createElement("audio").play();return e.catch(function(){}),e instanceof Promise}catch(e){}return!1}(),r=function(){try{return"Blob"in window&&"File"in window&&"FileList"in window&&"FileReader"in window&&!Browser.isMobile.any()&&(!Browser.isOpera||Browser.operaVersion>=15)}catch(e){}return!1}(),n=function(){try{return"geolocation"in navigator&&"function"==typeof navigator.geolocation.getCurrentPosition&&"function"==typeof navigator.geolocation.watchPosition}catch(e){}return!1}(),a=function(){try{return"MutationObserver"in window&&"function"==typeof window.MutationObserver}catch(e){}return!1}(),i=function(){try{return"performance"in window&&"function"==typeof window.performance.now}catch(e){}return!1}(),o=function(){try{return"ontouchstart"in window||!!window.DocumentTouch&&document instanceof window.DocumentTouch||!!navigator.maxTouchPoints||!!navigator.msMaxTouchPoints}catch(e){}return!1}(),s=function(){try{for(var e=new Map([["transition","transitionend"],["MSTransition","msTransitionEnd"],["WebkitTransition","webkitTransitionEnd"],["MozTransition","transitionend"]]),t=[].concat(_toConsumableArray(e.keys())),r=document.createElement("div"),n=0;n<t.length;++n)if(r.style[t[n]]!==undefined)return e.get(t[n])}catch(e){}return!1}();return Object.freeze({audio:e,audioPromise:t,fileAPI:r,geolocation:n,mutationObserver:a,performance:i,touch:o,transitionEndEvent:s})}(),Visibility=function(){function e(){return Boolean(r&&document[r.hiddenProperty])}function t(){return r&&document[r.stateProperty]||"visible"}var r=function(){try{return Object.freeze([{hiddenProperty:"hidden",stateProperty:"visibilityState",changeEvent:"visibilitychange"},{hiddenProperty:"webkitHidden",stateProperty:"webkitVisibilityState",changeEvent:"webkitvisibilitychange"},{hiddenProperty:"mozHidden",stateProperty:"mozVisibilityState",changeEvent:"mozvisibilitychange"},{hiddenProperty:"msHidden",stateProperty:"msVisibilityState",changeEvent:"msvisibilitychange"}].find(function(e){return e.hiddenProperty in document}))}catch(e){}return null}();return Object.freeze(Object.defineProperties({},{isHidden:{value:e},state:{value:t},hiddenProperty:{value:r.hiddenProperty},stateProperty:{value:r.stateProperty},changeEvent:{value:r.changeEvent}}))}(),_ref3=function(){function e(t){if("object"!==(void 0===t?"undefined":_typeof(t))||null===t)return t;if(t instanceof String)return String(t);if(t instanceof Number)return Number(t);if(t instanceof Boolean)return Boolean(t);if("function"==typeof t.clone)return t.clone(!0);if(t.nodeType&&"function"==typeof t.cloneNode)return t.cloneNode(!0);var r=void 0;return t instanceof Array?r=new Array(t.length):t instanceof Date?r=new Date(t.getTime()):t instanceof Map?(r=new Map,t.forEach(function(t,n){return r.set(n,e(t))})):t instanceof RegExp?r=new RegExp(t):t instanceof Set?(r=new Set,t.forEach(function(t){return r.add(e(t))})):r=Object.create(Object.getPrototypeOf(t)),Object.keys(t).forEach(function(n){return r[n]=e(t[n])}),r}function t(e){for(var t=document.createDocumentFragment(),r=document.createElement("p"),n=void 0;null!==(n=e.firstChild);){if(n.nodeType===Node.ELEMENT_NODE){switch(n.nodeName.toUpperCase()){case"BR":if(null!==n.nextSibling&&n.nextSibling.nodeType===Node.ELEMENT_NODE&&"BR"===n.nextSibling.nodeName.toUpperCase()){e.removeChild(n.nextSibling),e.removeChild(n),t.appendChild(r),r=document.createElement("p");continue}if(!r.hasChildNodes()){e.removeChild(n);continue}break;case"ADDRESS":case"ARTICLE":case"ASIDE":case"BLOCKQUOTE":case"CENTER":case"DIV":case"DL":case"FIGURE":case"FOOTER":case"FORM":case"H1":case"H2":case"H3":case"H4":case"H5":case"H6":case"HEADER":case"HR":case"MAIN":case"NAV":case"OL":case"P":case"PRE":case"SECTION":case"TABLE":case"UL":r.hasChildNodes()&&(t.appendChild(r),r=document.createElement("p")),t.appendChild(n);continue}}r.appendChild(n)}r.hasChildNodes()&&t.appendChild(r),e.appendChild(t)}function r(){try{return document.activeElement||null}catch(e){return null}}function n(e,t,r){var n="object"===(void 0===e?"undefined":_typeof(e))?e:document.getElementById(e);if(null==n)return null;var a=Array.isArray(t)?t:[t];jQuery(n).empty();for(var i=0,o=a.length;i<o;++i)if(Story.has(a[i]))return new Wikifier(n,Story.get(a[i]).processText().trim()),n;if(null!=r){var s=String(r).trim();""!==s&&new Wikifier(n,s)}return n}function a(e,t,r){var n=jQuery(document.createElement("div")),a=jQuery(document.createElement("button")),i=jQuery(document.createElement("pre")),o=L10n.get("errorTitle")+": "+(t||"unknown error");return a.addClass("error-toggle").ariaClick({label:L10n.get("errorToggle")},function(){a.hasClass("enabled")?(a.removeClass("enabled"),i.attr({"aria-hidden":!0,hidden:"hidden"})):(a.addClass("enabled"),i.removeAttr("aria-hidden hidden"))}).appendTo(n),jQuery(document.createElement("span")).addClass("error").text(o).appendTo(n),jQuery(document.createElement("code")).text(r).appendTo(i),i.addClass("error-source").attr({"aria-hidden":!0,hidden:"hidden"}).appendTo(n),n.addClass("error-view").appendTo(e),console.warn(o+"\n\t"+r.replace(/\n/g,"\n\t")),!1}function i(e,t){var r=i;switch(void 0===e?"undefined":_typeof(e)){case"number":if(Number.isNaN(e))return t;break;case"object":if(null===e)return t;if(Array.isArray(e))return e.map(function(e){return r(e,t)}).join(", ");if(e instanceof Set)return[].concat(_toConsumableArray(e)).map(function(e){return r(e,t)}).join(", ");if(e instanceof Map){return"{ "+[].concat(_toConsumableArray(e)).map(function(e){var n=_slicedToArray(e,2),a=n[0],i=n[1];return r(a,t)+" → "+r(i,t)}).join(", ")+" }"}return e instanceof Date?e.toLocaleString():"function"==typeof e.toString?e.toString():Object.prototype.toString.call(e);case"function":case"undefined":return t}return String(e)}return Object.freeze(Object.defineProperties({},{clone:{value:e},convertBreaks:{value:t},safeActiveElement:{value:r},setPageElement:{value:n},throwError:{value:a},toStringOrDefault:{value:i}}))
