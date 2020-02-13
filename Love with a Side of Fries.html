@@ -148,7 +148,7 @@ Enter your burger franchise:
 </tw-passagedata><tw-passagedata pid="3" name="Take key and Go to Room" tags="" position="638,238" size="100,100">You go upt to your hotel room and unload your stuff. By the time you freshen up the party has always.
 
 
-[[Head Down to the Party]]</tw-passagedata><tw-passagedata pid="4" name="Head Down to the Party" tags="" position="790,231" size="100,100">-Describe Environment
+[[Head Down to the Party]]</tw-passagedata><tw-passagedata pid="4" name="Head Down to the Party" tags="" position="790,231" size="100,100">/*-Describe Environment
 -Introduction to Arby
 -Introduction to King
 --King gives you a once over
@@ -165,9 +165,18 @@ Enter your burger franchise:
 --Arby embarassed
 --Arby takes Wendy away
 --Get Arby&#39;s Number
---end of encounter
+--end of encounter*/
 
-[[Return to Hotel Room]]</tw-passagedata><tw-passagedata pid="5" name="Return to Hotel Room" tags="" position="997,267" size="100,100">Who do you want to call
+
+You take the elevator to ballroom on the top floord. Once the doors slide open you are awestruck. In the far corner of the ballroom is a live band playing a jazzy renditions of popular songs. To the left of the room spans a buffet that could feed a village. The place is packed associates and representatives for franchises all over the world, dressed to the nines for the occassion.  A portion of the floor in the center has been reserved for dancing, surrounded by numerous round tables, decorated with tableclothes and tea lights. Near the elevator stands an ice sculpture in the shape of a combo burger meal with fries; a classic staple of any burger franchise. 
+
+&lt;&lt;set $locationChecker = 0&gt;&gt;
+
+[[View the sculpture]]
+[[Admire the band]]
+[[Grab a bite to eat]]
+
+[[Return to Hotel Room]]</tw-passagedata><tw-passagedata pid="5" name="Return to Hotel Room" tags="" position="1727,453.6666666666667" size="100,100">Who do you want to call
 
 [[Call Arby]]
 [[Call King]]
@@ -177,12 +186,12 @@ Enter your burger franchise:
 &lt;&lt;set $ArbyLove to 50&gt;&gt;
 Double-click this passage to edit it.
 
-[[Its a Date!-&gt;A Date with Arby]]</tw-passagedata><tw-passagedata pid="7" name="Call King" tags="King checkpoint" position="860,399" size="100,100">
+[[Its a Date!-&gt;A Date with Arby]]</tw-passagedata><tw-passagedata pid="7" name="Call King" tags="King checkpoint" position="1303.3333333333335,590.6666666666667" size="100,100">
 You decide to call the King. After talking for a bit, he agrees to pick you up at 7:00pm to take you to his favorite restaurant, the Cheesecake Factory. It is already 6:15, and you begin to rush to get ready.
 
-[[Its a Date!-&gt;A Date With King]]</tw-passagedata><tw-passagedata pid="8" name="Call Ronnie" tags="Ronnie checkpoint" position="1149,370" size="100,100">
+[[Its a Date!-&gt;A Date With King]]</tw-passagedata><tw-passagedata pid="8" name="Call Ronnie" tags="Ronnie checkpoint" position="2155.666666666667,358.3333333333333" size="100,100">
 
-[[Its a Date!-&gt;A Date with Ronnie]]</tw-passagedata><tw-passagedata pid="9" name="Call Wendy" tags="Wendy checkpoint" position="1331,392" size="100,100">You can&#39;t get your mind off the firey Redhead at the party. For someone with such an innocent face, you would never expect her to be *that* forward. Then again that confidence...you can&#39;t help but admire it. 
+[[Its a Date!-&gt;A Date with Ronnie]]</tw-passagedata><tw-passagedata pid="9" name="Call Wendy" tags="Wendy checkpoint" position="3332.666666666667,150.33333333333331" size="100,100">You can&#39;t get your mind off the firey Redhead at the party. For someone with such an innocent face, you would never expect her to be *that* forward. Then again that confidence...you can&#39;t help but admire it. 
 
 It motivates you to give her a call. It&#39;s late but she&#39;s seems like a night owl anyways. Maybe you can meet up for coffee, get to know her a bit more. Does she even drink coffee? Guess you&#39;ll have to see. 
 
@@ -201,7 +210,7 @@ She cuts you off with a cackle.
 -Click-
 
 
-[[Its a Date!-&gt;A Date with Wendy]]</tw-passagedata><tw-passagedata pid="10" name="Call no one and try to forget this mess of a night" tags="Game-End" position="1406,203" size="100,100">
+[[Its a Date!-&gt;A Date with Wendy]]</tw-passagedata><tw-passagedata pid="10" name="Call no one and try to forget this mess of a night" tags="Game-End" position="1752.6666666666667,164.66666666666666" size="100,100">
 You decide to go to sleep and check out of your reservation two days early.
 Your boss is extremely upset over your lack of networking and fires you upon your return. 
 
@@ -212,7 +221,7 @@ GAME OVER</tw-passagedata><tw-passagedata pid="11" name="A Date with Arby" tags=
 [[1stDate Choice1 GenQ Arby]]
 [[1stDate Choice2 GenQ Arby]]
 [[1stDate Choice3 GenQ Arby]]
-[[1stDate Choice4 GenQ Arby]]</tw-passagedata><tw-passagedata pid="12" name="A Date With King" tags="1st-Date King" position="798,544" size="100,100">/*introduction affection variable*/
+[[1stDate Choice4 GenQ Arby]]</tw-passagedata><tw-passagedata pid="12" name="A Date With King" tags="1st-Date King" position="1348,944" size="100,100">/*introduction affection variable*/
 
 &lt;&lt;set $affection to 50&gt;&gt;
 
@@ -245,14 +254,7 @@ The food arrives and you both begin to dig in. You loved the taste so much. The 
 [[&quot;So why did you decide to go into the business?&quot;]]
 [[&quot;Do you always like to go to expensive places?&quot;]]
 [[&quot;What is your favorite food?&quot;]]
-</tw-passagedata><tw-passagedata pid="13" name="A Date with Ronnie" tags="1st-Date Ronnie" position="1155,543" size="100,100">-Describe encounter
--Dialogue
--Question 1:
-
-[[1stDate Choice1 GenQ Ronnie]]
-[[1stDate Choice2 GenQ Ronnie]]
-[[1stDate Choice3 GenQ Ronnie]]
-[[1stDate Choice4 GenQ Ronnie]]</tw-passagedata><tw-passagedata pid="14" name="A Date with Wendy" tags="1st-Date Wendy" position="1800,398" size="100,100">
+</tw-passagedata><tw-passagedata pid="13" name="A Date with Wendy" tags="1st-Date Wendy" position="3608.3333333333335,359.66666666666663" size="100,100">
 /*introduction affection variable*/
 
 &lt;&lt;set $affection to 50&gt;&gt;
@@ -289,62 +291,50 @@ After the match you find yourself sitting with her in a brokedown diner two bloc
 [[&quot;So how did you get into roller derby?&quot;]]
 [[&quot;I take it pie is your favorite desert.&quot;]]
 [[&quot;So...what&#39;s your deal with Ronnie?&quot;]]
-[[Say nothing.]]</tw-passagedata><tw-passagedata pid="15" name="Choice1-Arby" tags="Arby 1st-Date" position="0,1057.6666666666667" size="100,100">Double-click this passage to edit it.
+[[Say nothing.]]</tw-passagedata><tw-passagedata pid="14" name="Choice1-Arby" tags="Arby 1st-Date" position="0,1057" size="100,100">Double-click this passage to edit it.
 
 -Dialogue
 -Date Ends
 
-[[Return to Hotel -&gt;End Arby Date]]</tw-passagedata><tw-passagedata pid="16" name="Choice2-Arby" tags="Arby 1st-Date" position="116,1043.3333333333333" size="100,100">Double-click this passage to edit it.
+[[Return to Hotel -&gt;End Arby Date]]</tw-passagedata><tw-passagedata pid="15" name="Choice2-Arby" tags="Arby 1st-Date" position="116,1043" size="100,100">Double-click this passage to edit it.
 -Dialogue
 -Date Ends
 
-[[Return to Hotel -&gt;End Arby Date]]</tw-passagedata><tw-passagedata pid="17" name="Choice3-Arby" tags="Arby 1st-Date" position="238.33333333333331,1043.3333333333333" size="100,100">-Dialogue
+[[Return to Hotel -&gt;End Arby Date]]</tw-passagedata><tw-passagedata pid="16" name="Choice3-Arby" tags="Arby 1st-Date" position="238,1043" size="100,100">-Dialogue
 -Date Ends
 
-[[Return to Hotel -&gt;End Arby Date]]</tw-passagedata><tw-passagedata pid="18" name="Choice4-Arby" tags="Arby 1st-Date" position="356.3333333333333,984.9999999999999" size="100,100">-Dialogue
+[[Return to Hotel -&gt;End Arby Date]]</tw-passagedata><tw-passagedata pid="17" name="Choice4-Arby" tags="Arby 1st-Date" position="356,984" size="100,100">-Dialogue
 -Date Ends
 
-[[Return to Hotel -&gt;End Arby Date]]</tw-passagedata><tw-passagedata pid="19" name="Choice1-Ronnie" tags="Ronnie 1st-Date" position="1157,1029" size="100,100">-Dialogue
--Date Ends
-
-[[Return to Hotel-&gt;end Ronnie date]]</tw-passagedata><tw-passagedata pid="20" name="Choice2-Ronnie" tags="Ronnie 1st-Date" position="1272,1026" size="100,100">-Dialogue
--Date Ends
-
-[[Return to Hotel-&gt;end Ronnie date]]</tw-passagedata><tw-passagedata pid="21" name="Choice3-Ronnie" tags="Ronnie 1st-Date" position="1376,1023" size="100,100">-Dialogue
--Date Ends
-
-[[Return to Hotel-&gt;end Ronnie date]]</tw-passagedata><tw-passagedata pid="22" name="Choice4-Ronnie" tags="Ronnie 1st-Date" position="1479,1019" size="100,100">-Dialogue
--Date Ends
-
-[[Return to Hotel-&gt;end Ronnie date]]</tw-passagedata><tw-passagedata pid="23" name="Verified" tags="" position="492,228" size="100,100">
+[[Return to Hotel -&gt;End Arby Date]]</tw-passagedata><tw-passagedata pid="18" name="Verified" tags="" position="492,228" size="100,100">
 &quot;Pleasure to meet you &lt;&lt;print $name&gt;&gt;. I have registered you as the representative for &lt;&lt;print $food&gt;&gt;. You will be in room 024. You might want to freshen up quickly! The event will be starting soon.&quot;&gt;&gt;
 
 [[Take key and Go to Room]]
 
-</tw-passagedata><tw-passagedata pid="24" name="1stDate Choice1 GenQ Arby" tags="1st-Date Arby" position="0,691.3333333333334" size="100,100">-segway into question 2
+</tw-passagedata><tw-passagedata pid="19" name="1stDate Choice1 GenQ Arby" tags="1st-Date Arby" position="0,691" size="100,100">-segway into question 2
 
 [[Choice1-Arby]]
 [[Choice2-Arby]]
 [[Choice3-Arby]]
-[[Choice4-Arby]]</tw-passagedata><tw-passagedata pid="25" name="1stDate Choice2 GenQ Arby" tags="1st-Date Arby" position="163.66666666666666,685.6666666666666" size="100,100">-segway into question 2
+[[Choice4-Arby]]</tw-passagedata><tw-passagedata pid="20" name="1stDate Choice2 GenQ Arby" tags="1st-Date Arby" position="163,685" size="100,100">-segway into question 2
 
 [[Choice1-Arby]]
 [[Choice2-Arby]]
 [[Choice3-Arby]]
-[[Choice4-Arby]]</tw-passagedata><tw-passagedata pid="26" name="1stDate Choice3 GenQ Arby" tags="1st-Date Arby" position="283.66666666666663,678" size="100,100">-segway into question 2
+[[Choice4-Arby]]</tw-passagedata><tw-passagedata pid="21" name="1stDate Choice3 GenQ Arby" tags="1st-Date Arby" position="283,678" size="100,100">-segway into question 2
 
 [[Choice1-Arby]]
 [[Choice2-Arby]]
 [[Choice3-Arby]]
-[[Choice4-Arby]]</tw-passagedata><tw-passagedata pid="27" name="1stDate Choice4 GenQ Arby" tags="1st-Date Arby" position="403.66666666666663,669.6666666666666" size="100,100">-segway into question 2
+[[Choice4-Arby]]</tw-passagedata><tw-passagedata pid="22" name="1stDate Choice4 GenQ Arby" tags="1st-Date Arby" position="403,669" size="100,100">-segway into question 2
 
 [[Choice1-Arby]]
 [[Choice2-Arby]]
 [[Choice3-Arby]]
-[[Choice4-Arby]]</tw-passagedata><tw-passagedata pid="28" name="End Arby Date" tags="Arby 1st-Date checkpoint" position="326,1241" size="100,100">It&#39;s well passed nightfall by the time you return to your hotel room. You had a wonderful time on your date today. Although the event is meant to last for the whole weekend, you can&#39;t help longing to skip the conferences and try a second date. You wonder however if they feel the same...
+[[Choice4-Arby]]</tw-passagedata><tw-passagedata pid="23" name="End Arby Date" tags="Arby 1st-Date checkpoint" position="326,1241" size="100,100">It&#39;s well passed nightfall by the time you return to your hotel room. You had a wonderful time on your date today. Although the event is meant to last for the whole weekend, you can&#39;t help longing to skip the conferences and try a second date. You wonder however if they feel the same...
 
 [[Go to Sleep -&gt;Arby Date 2]]
-</tw-passagedata><tw-passagedata pid="29" name="&quot;So why did you decide to go into the business?&quot;" tags="King 1st-Date" position="623.6666666666666,679" size="100,100">&lt;&lt;set $affection +=10&gt;&gt;
+</tw-passagedata><tw-passagedata pid="24" name="&quot;So why did you decide to go into the business?&quot;" tags="King 1st-Date" position="1086.3333333333335,1004" size="100,100">&lt;&lt;set $affection +=10&gt;&gt;
 
 Affection points: &lt;&lt;print $affection&gt;&gt;
 
@@ -363,7 +353,7 @@ He smiles brightly. &quot;So what about you? Why did you decide to go into the b
 [[Money]]
 [[Fame]]
 [[Family]]
-[[Nothing else better]]</tw-passagedata><tw-passagedata pid="30" name="&quot;Do you always like to go to expensive places?&quot;" tags="King 1st-Date" position="779.9999999999999,700.6666666666666" size="100,100">Affection points: &lt;&lt;print $affection&gt;&gt;
+[[Nothing else better]]</tw-passagedata><tw-passagedata pid="25" name="&quot;Do you always like to go to expensive places?&quot;" tags="King 1st-Date" position="1499,1153.3333333333335" size="100,100">Affection points: &lt;&lt;print $affection&gt;&gt;
 
 Looking around the restaurant you decide to ask about his taste in restaurant spaces. 
 
@@ -371,7 +361,7 @@ He looks slightly offended at your question. &quot;Well I do like the more finer
 
 [[No!]]
 [[Well...Kinda.]]
-</tw-passagedata><tw-passagedata pid="31" name="&quot;What is your favorite food?&quot;" tags="King 1st-Date" position="990,661" size="100,100">&lt;&lt;set $affection +=5&gt;&gt;
+</tw-passagedata><tw-passagedata pid="26" name="&quot;What is your favorite food?&quot;" tags="King 1st-Date" position="1823.3333333333335,1244.3333333333335" size="100,100">&lt;&lt;set $affection +=5&gt;&gt;
 
 Affection points: &lt;&lt;print $affection&gt;&gt;
 
@@ -385,95 +375,44 @@ What about you? What&#39;s your favorite food?
 [[&quot;American&quot;]]
 [[&quot;Hispanic&quot;]]
 [[&quot;Asian&quot;]]
-</tw-passagedata><tw-passagedata pid="32" name="1stDate Choice1 GenQ Ronnie" tags="Ronnie 1st-Date" position="1237.3333333333333,696.6666666666666" size="100,100">-segway to question 2
-
-[[Choice1-Ronnie]]
-[[Choice2-Ronnie]]
-[[Choice3-Ronnie]]
-[[Choice4-Ronnie]]</tw-passagedata><tw-passagedata pid="33" name="1stDate Choice2 GenQ Ronnie" tags="Ronnie 1st-Date" position="1362.6666666666667,691.6666666666666" size="100,100">-segway to question 2
-
-[[Choice1-Ronnie]]
-[[Choice2-Ronnie]]
-[[Choice3-Ronnie]]
-[[Choice4-Ronnie]]</tw-passagedata><tw-passagedata pid="34" name="1stDate Choice3 GenQ Ronnie" tags="Ronnie 1st-Date" position="1469.3333333333333,686.6666666666666" size="100,100">-segway to question 2
-
-[[Choice1-Ronnie]]
-[[Choice2-Ronnie]]
-[[Choice3-Ronnie]]
-[[Choice4-Ronnie]]</tw-passagedata><tw-passagedata pid="35" name="1stDate Choice4 GenQ Ronnie" tags="Ronnie 1st-Date" position="1621.3333333333333,686.3333333333334" size="100,100">-segway to question 2
-
-[[Choice1-Ronnie]]
-[[Choice2-Ronnie]]
-[[Choice3-Ronnie]]
-[[Choice4-Ronnie]]</tw-passagedata><tw-passagedata pid="36" name="end Ronnie date" tags="Ronnie 1st-Date checkpoint" position="1349,1204" size="100,100">It&#39;s well passed nightfall by the time you return to your hotel room. You had a wonderful time on your date today. Although the event is meant to last for the whole weekend, you can&#39;t help longing to skip the conferences and try a second date. You wonder however if they feel the same...
-
-[[Go to Sleep-&gt;Ronnie Date 2]]</tw-passagedata><tw-passagedata pid="37" name="Arby Date 2" tags="Arby 2nd-Date" position="324,1374" size="100,100">-Describe encounter
+</tw-passagedata><tw-passagedata pid="27" name="Arby Date 2" tags="Arby 2nd-Date" position="324,1374" size="100,100">-Describe encounter
 -Dialogue
 -Question 1:
 
 [[choice1-Arby -&gt;2ndDate Choice1 GenQ Arby]]
 [[choice1-Arby -&gt;2ndDate Choice2 GenQ Arby]]
 [[choice1-Arby -&gt;2ndDate Choice3 GenQ Arby]]
-[[choice1-Arby -&gt;2ndDate Choice4 GenQ Arby]]</tw-passagedata><tw-passagedata pid="38" name="Ronnie Date 2" tags="Ronnie 2nd-Date" position="1349,1375" size="100,100">-Describe encounter
--Dialogue
--Question 1:
-
-[[choice1-Ronnie -&gt;2ndDate Choice1 GenQ Ronnie]]
-[[choice1-Ronnie -&gt;2ndDate Choice2 GenQ Ronnie]]
-[[choice1-Ronnie -&gt;2ndDate Choice3 GenQ Ronnie]]
-[[choice1-Ronnie -&gt;2ndDate Choice4 GenQ Ronnie]]</tw-passagedata><tw-passagedata pid="39" name="2ndDate Choice1 GenQ Arby" tags="Arby 2nd-Date" position="146,1534" size="100,100">-segway into question 2
+[[choice1-Arby -&gt;2ndDate Choice4 GenQ Arby]]</tw-passagedata><tw-passagedata pid="28" name="2ndDate Choice1 GenQ Arby" tags="Arby 2nd-Date" position="146,1534" size="100,100">-segway into question 2
 
 [[2ndDate Choice1-Arby]]
 [[2ndDate Choice2-Arby]]
 [[2ndDate Choice3-Arby]]
-[[2ndDate Choice4-Arby]]</tw-passagedata><tw-passagedata pid="40" name="2ndDate Choice2 GenQ Arby" tags="Arby 2nd-Date" position="251,1529" size="100,100">-segway into question 2
+[[2ndDate Choice4-Arby]]</tw-passagedata><tw-passagedata pid="29" name="2ndDate Choice2 GenQ Arby" tags="Arby 2nd-Date" position="251,1529" size="100,100">-segway into question 2
 
 [[2ndDate Choice1-Arby]]
 [[2ndDate Choice2-Arby]]
 [[2ndDate Choice3-Arby]]
-[[2ndDate Choice4-Arby]]</tw-passagedata><tw-passagedata pid="41" name="2ndDate Choice3 GenQ Arby" tags="Arby 2nd-Date" position="366,1529" size="100,100">-segway into question 2
+[[2ndDate Choice4-Arby]]</tw-passagedata><tw-passagedata pid="30" name="2ndDate Choice3 GenQ Arby" tags="Arby 2nd-Date" position="366,1529" size="100,100">-segway into question 2
 
 [[2ndDate Choice1-Arby]]
 [[2ndDate Choice2-Arby]]
 [[2ndDate Choice3-Arby]]
-[[2ndDate Choice4-Arby]]</tw-passagedata><tw-passagedata pid="42" name="2ndDate Choice4 GenQ Arby" tags="Arby 2nd-Date" position="473,1526" size="100,100">-segway into question 2
+[[2ndDate Choice4-Arby]]</tw-passagedata><tw-passagedata pid="31" name="2ndDate Choice4 GenQ Arby" tags="Arby 2nd-Date" position="473,1526" size="100,100">-segway into question 2
 
 [[2ndDate Choice1-Arby]]
 [[2ndDate Choice2-Arby]]
 [[2ndDate Choice3-Arby]]
-[[2ndDate Choice4-Arby]]</tw-passagedata><tw-passagedata pid="43" name="2ndDate Choice1 GenQ Ronnie" tags="Ronnie 2nd-Date" position="1155,1532" size="100,100">-segway into question 2
-
-[[2ndDate Choice1-Ronnie]]
-[[2ndDate Choice2-Ronnie]]
-[[2ndDate Choice3-Ronnie]]
-[[2ndDate Choice4-Ronnie]]</tw-passagedata><tw-passagedata pid="44" name="2ndDate Choice2 GenQ Ronnie" tags="Ronnie 2nd-Date" position="1259,1530" size="100,100">-segway into question 2
-
-[[2ndDate Choice1-Ronnie]]
-[[2ndDate Choice2-Ronnie]]
-[[2ndDate Choice3-Ronnie]]
-[[2ndDate Choice4-Ronnie]]</tw-passagedata><tw-passagedata pid="45" name="2ndDate Choice3 GenQ Ronnie" tags="Ronnie 2nd-Date" position="1366,1525" size="100,100">-segway into question 2
-
-[[2ndDate Choice1-Ronnie]]
-[[2ndDate Choice2-Ronnie]]
-[[2ndDate Choice3-Ronnie]]
-[[2ndDate Choice4-Ronnie]]</tw-passagedata><tw-passagedata pid="46" name="2ndDate Choice4 GenQ Ronnie" tags="Ronnie 2nd-Date" position="1476,1525" size="100,100">-segway into question 2
-
-[[2ndDate Choice1-Ronnie]]
-[[2ndDate Choice2-Ronnie]]
-[[2ndDate Choice3-Ronnie]]
-[[2ndDate Choice4-Ronnie]]</tw-passagedata><tw-passagedata pid="47" name="2ndDate Choice1-Arby" tags="Arby 2nd-Date" position="148,1962" size="100,100">
+[[2ndDate Choice4-Arby]]</tw-passagedata><tw-passagedata pid="32" name="2ndDate Choice1-Arby" tags="Arby 2nd-Date" position="148,1962" size="100,100">
 
 [[Return to Hotel -&gt;End Arby 2nd Date]]
-</tw-passagedata><tw-passagedata pid="48" name="2ndDate Choice2-Arby" tags="Arby 2nd-Date" position="254,1962" size="100,100">[[Return to Hotel -&gt;End Arby 2nd Date]]
-</tw-passagedata><tw-passagedata pid="49" name="2ndDate Choice3-Arby" tags="Arby 2nd-Date" position="366,1966" size="100,100">[[Return to Hotel -&gt;End Arby 2nd Date]]
-</tw-passagedata><tw-passagedata pid="50" name="2ndDate Choice4-Arby" tags="Arby 2nd-Date" position="475,1966" size="100,100">[[Return to Hotel -&gt;End Arby 2nd Date]]
-</tw-passagedata><tw-passagedata pid="51" name="2ndDate Choice1-Ronnie" tags="Ronnie 2nd-Date" position="1176,1959" size="100,100">[[Return to Hotel -&gt;End Ronnie 2nd Date]]</tw-passagedata><tw-passagedata pid="52" name="2ndDate Choice2-Ronnie" tags="Ronnie 2nd-Date" position="1282,1961" size="100,100">[[Return to Hotel -&gt;End Ronnie 2nd Date]]</tw-passagedata><tw-passagedata pid="53" name="2ndDate Choice3-Ronnie" tags="Ronnie 2nd-Date" position="1390,1958" size="100,100">[[Return to Hotel -&gt;End Ronnie 2nd Date]]</tw-passagedata><tw-passagedata pid="54" name="2ndDate Choice4-Ronnie" tags="Ronnie 2nd-Date" position="1510,1960" size="100,100">[[Return to Hotel -&gt;End Ronnie 2nd Date]]</tw-passagedata><tw-passagedata pid="55" name="End Arby 2nd Date" tags="checkpoint Arby" position="303,2199" size="100,100">
-[[Arby Finale]]</tw-passagedata><tw-passagedata pid="56" name="End Ronnie 2nd Date" tags="Ronnie checkpoint" position="1327,2200" size="100,100">
-
-[[Ronnie Finale]]</tw-passagedata><tw-passagedata pid="57" name="Arby Finale" tags="Arby FinaleEvent" position="298,2392" size="100,100">
+</tw-passagedata><tw-passagedata pid="33" name="2ndDate Choice2-Arby" tags="Arby 2nd-Date" position="254,1962" size="100,100">[[Return to Hotel -&gt;End Arby 2nd Date]]
+</tw-passagedata><tw-passagedata pid="34" name="2ndDate Choice3-Arby" tags="Arby 2nd-Date" position="366,1966" size="100,100">[[Return to Hotel -&gt;End Arby 2nd Date]]
+</tw-passagedata><tw-passagedata pid="35" name="2ndDate Choice4-Arby" tags="Arby 2nd-Date" position="475,1966" size="100,100">[[Return to Hotel -&gt;End Arby 2nd Date]]
+</tw-passagedata><tw-passagedata pid="36" name="End Arby 2nd Date" tags="checkpoint Arby" position="303,2199" size="100,100">
+[[Arby Finale]]</tw-passagedata><tw-passagedata pid="37" name="Arby Finale" tags="Arby FinaleEvent" position="298,2392" size="100,100">
 if (affection is over 80) show winning scenario
 
-if (affection under 80) show losing scenario</tw-passagedata><tw-passagedata pid="58" name="King Finale" tags="King FinaleEvent" position="820,1195.333333333333" size="100,100">&lt;&lt;if $affection gt 60&gt;&gt;
+if (affection under 80) show losing scenario</tw-passagedata><tw-passagedata pid="38" name="King Finale" tags="King FinaleEvent" position="1441.6666666666667,1721.6666666666667" size="100,100">&lt;&lt;if $affection gt 60&gt;&gt;
 
 It&#39;s the next day after your date and you get a call from the King. Groggy because of the early hour, you pick up the phone.
 
@@ -485,15 +424,7 @@ It&#39;s the next day after your date and you get a call from the King. Groggy b
 
 He chuckles at your excitement. &quot;Great, I&#39;ll pick you up around 11:30.&quot; You both say your goodbyes and you start off your day. 
 
-Time moves quickly and soon it is time for the lunch. He picks you up as promised. He is very silent in the car. He almost looks nervous. You try to make small convo to loosen him up but he doesn&#39;t seem to budge. You both arrive at the restaurant and order. After taking your seats you decide to ask him whats wrong.
-
-&quot;Hey. Are you okay? You seem stressed or nervous.&quot; 
-
-He sighs &quot;Okay So, on that.....okay...&lt;&lt;print $name&gt;&gt;, I have decided that I really like you a lot. And I would like to be like a steady thing. Only if you wanted to also. I don&#39;t want to force anything. But I would also be really happy if we were. Oh no now I&#39;m rambling.&quot;
-
-You laugh at his cute display of love. &quot;I would love nothing more than to be in a relationship with you.&quot; He sighs in relief and smiles. 
-
-&quot;Amazing mon doudou.&quot;
+[[Get dressed for the day]]
 
 &lt;&lt;else&gt;&gt;
 
@@ -511,10 +442,7 @@ She hangs up the phone.
 
 GAME OVER LONELY ENDING
 
-&lt;&lt;endif&gt;&gt;</tw-passagedata><tw-passagedata pid="59" name="Ronnie Finale" tags="Ronnie FinaleEvent" position="1324,2399" size="100,100">
-if (affection is over 80) show winning scenario
-
-if (affection under 80) show losing scenario</tw-passagedata><tw-passagedata pid="60" name="Wendy Finale" tags="Wendy FinaleEvent" position="2192,1335" size="100,100">
+&lt;&lt;endif&gt;&gt;</tw-passagedata><tw-passagedata pid="39" name="Wendy Finale" tags="Wendy FinaleEvent" position="3658.666666666667,1485" size="100,100">
 &lt;&lt;if $affection gt 60&gt;&gt;
 You spend the next day debating whether or not to call her. You&#39;d love to see Wendy again, but at the same time you&#39;re not sure if she feels the same. Suddenly your phone buzzes.
 
@@ -542,7 +470,7 @@ Guess that answers your question...
 
 GAME OVER
 
-&lt;&lt;endif&gt;&gt;</tw-passagedata><tw-passagedata pid="61" name="&quot;So how did you get into roller derby?&quot;" tags="" position="1885,585" size="100,100">&lt;&lt;set $affection +=10&gt;&gt;
+&lt;&lt;endif&gt;&gt;</tw-passagedata><tw-passagedata pid="40" name="&quot;So how did you get into roller derby?&quot;" tags="" position="2968.333333333334,943.3333333333334" size="100,100">&lt;&lt;set $affection +=10&gt;&gt;
 
 &quot;I&#39;ve been doing it for a long time now. Its really been a great stress reliever.&quot; 
 
@@ -564,7 +492,7 @@ She looks up at you, her iris bright like the blue sky at peak sunrise.
 [[You should always be true to yourself, being happy is whats most important.]]
 [[Say nothing.]]
 
-affection points:&lt;&lt;print $affection&gt;&gt;</tw-passagedata><tw-passagedata pid="62" name="&quot;I take it pie is your favorite desert.&quot;" tags="" position="2173,564" size="100,100">&lt;&lt;set $affection +=5&gt;&gt;
+affection points:&lt;&lt;print $affection&gt;&gt;</tw-passagedata><tw-passagedata pid="41" name="&quot;I take it pie is your favorite desert.&quot;" tags="" position="3311.3333333333335,674" size="100,100">&lt;&lt;set $affection +=5&gt;&gt;
 She takes another bite before setting her fork down to grab a sip of coffee.
 
 &quot;Actually my favorite dessert is soft serve ice cream. It&#39;s what my brand is known for. I know I don&#39;t come off as having anything in common with my brand, thats the one thing about me that hasn&#39;t changed.&quot; 
@@ -587,7 +515,7 @@ Her voice is softer compared to usual. Her eyes remain focused on the road outsi
 
 affection points: &lt;&lt;print $affection&gt;&gt;
 
-</tw-passagedata><tw-passagedata pid="63" name="&quot;So...what&#39;s your deal with Ronnie?&quot;" tags="" position="2558,654" size="100,100">&lt;&lt;set $affection -=10&gt;&gt;
+</tw-passagedata><tw-passagedata pid="42" name="&quot;So...what&#39;s your deal with Ronnie?&quot;" tags="" position="3679.666666666667,665.6666666666667" size="100,100">&lt;&lt;set $affection -=10&gt;&gt;
 She slams her fist on the table, causing some of the coffee to fly out.
 
 &quot;Holy shit are you serious?!&quot; She excaims.
@@ -605,7 +533,7 @@ She grits her teeth and looks away.
 [[Well, for the record, your hair looks way better than hers.]]
 [[Say nothing.]]
 
-affection points: &lt;&lt;print $affection&gt;&gt;</tw-passagedata><tw-passagedata pid="64" name="Say nothing." tags="" position="3005,617" size="100,100">&lt;&lt;set $affection +=0&gt;&gt;
+affection points: &lt;&lt;print $affection&gt;&gt;</tw-passagedata><tw-passagedata pid="43" name="Say nothing." tags="" position="4103.333333333334,653.6666666666666" size="100,100">&lt;&lt;set $affection +=0&gt;&gt;
 
 &quot;You know,&quot; she speaks between bites, &quot;you can talk to me. I may bark but I don&#39;t bite...often&quot;.
 
@@ -619,7 +547,7 @@ You consider to sit in silence debating whether or not to get a slice of pie to 
 [[I&#39;m not the best with conversation...]] 
 [[Get up and leave.]]
 
-affection points: &lt;&lt;print $affection&gt;&gt;</tw-passagedata><tw-passagedata pid="65" name="It feels like you&#39;re trying to hard to be something you&#39;re not." tags="" position="1665,809" size="100,100">&lt;&lt;set $affection -=10&gt;&gt;
+affection points: &lt;&lt;print $affection&gt;&gt;</tw-passagedata><tw-passagedata pid="44" name="It feels like you&#39;re trying to hard to be something you&#39;re not." tags="" position="2553.3333333333335,1385.6666666666667" size="100,100">&lt;&lt;set $affection -=10&gt;&gt;
 
 &quot;You know, thats none of your damn business newbie.&quot; 
 
@@ -637,7 +565,7 @@ You begrudgingly pay Wendy&#39;s check before leaving.
 [[Go back to Hotel and Sleep-&gt;Wendy Finale]]
 
 affection points: &lt;&lt;print $affection&gt;&gt;
-</tw-passagedata><tw-passagedata pid="66" name="This rebranding makes you way hotter." tags="" position="1790,810" size="100,100">&lt;&lt;set $affection +=5&gt;&gt;
+</tw-passagedata><tw-passagedata pid="45" name="This rebranding makes you way hotter." tags="" position="2673.3333333333335,1295" size="100,100">&lt;&lt;set $affection +=5&gt;&gt;
 She smirks at you, like a predator that just found its next meal. 
 
 &quot;Good to know you&#39;ve got taste newbie.&quot;
@@ -652,7 +580,7 @@ Shes about to speak when suddenly her phone starts buzzing.
 
 [[Go back to Hotel and Sleep-&gt;Wendy Finale]]
 
-affection points: &lt;&lt;$affection&gt;&gt;</tw-passagedata><tw-passagedata pid="67" name="You should always be true to yourself, being happy is whats most important." tags="" position="1910,817" size="100,100">&lt;&lt;set $affection +=10&gt;&gt;
+affection points: &lt;&lt;$affection&gt;&gt;</tw-passagedata><tw-passagedata pid="46" name="You should always be true to yourself, being happy is whats most important." tags="" position="2788.3333333333335,1240.3333333333333" size="100,100">&lt;&lt;set $affection +=10&gt;&gt;
 
 She grabs her cup again to take a sip, a smile creeping out from behind the rim. 
 
@@ -666,7 +594,7 @@ You smile back at her and she huffs a laugh. Suddenly her phone starts buzzing.
 
 [[Go back to Hotel and Sleep-&gt;Wendy Finale]]
 
-affection points: &lt;&lt;print $affection&gt;&gt;</tw-passagedata><tw-passagedata pid="68" name="No, I really did have a good time!" tags="" position="2845,799" size="100,100">&lt;&lt;set $affection += 10&gt;&gt;
+affection points: &lt;&lt;print $affection&gt;&gt;</tw-passagedata><tw-passagedata pid="47" name="No, I really did have a good time!" tags="" position="4096.666666666667,844" size="100,100">&lt;&lt;set $affection += 10&gt;&gt;
 
 She grabs her cup again to take a sip, a smile creeping out from behind the rim.
 
@@ -682,7 +610,7 @@ You smile back at her and she huffs a laugh. Suddenly her phone starts buzzing.
 affection points: &lt;&lt;print $affection&gt;&gt;
 
 
-</tw-passagedata><tw-passagedata pid="69" name="I&#39;m not the best with conversation..." tags="" position="3010,829" size="100,100">&lt;&lt;set $affection -=5&gt;&gt;
+</tw-passagedata><tw-passagedata pid="48" name="I&#39;m not the best with conversation..." tags="" position="4346.666666666667,845.6666666666666" size="100,100">&lt;&lt;set $affection -=5&gt;&gt;
 
 She grabs her cup again to take a sip, a smile creeping out from behind the rim.
 
@@ -694,14 +622,14 @@ You smile back at her and she huffs a laugh. Suddenly her phone starts buzzing.
 
 [[Go back to Hotel and Sleep-&gt;Wendy Finale]]
 
-affection points: &lt;&lt;print $affection&gt;&gt;</tw-passagedata><tw-passagedata pid="70" name="Get up and leave." tags="" position="3156,808" size="100,100">
+affection points: &lt;&lt;print $affection&gt;&gt;</tw-passagedata><tw-passagedata pid="49" name="Get up and leave." tags="" position="4556,831.3333333333334" size="100,100">
 You stand up and place a tip on the table. Leaving Wendy staring at you dumbfounded as you exit the door. 
 
 You decide to go to sleep once you return to your hotel and check out of your reservation early.
 
 Your boss is extremely upset over your lack of networking and fires you upon your return. 
 
-GAME OVER</tw-passagedata><tw-passagedata pid="71" name="Don&#39;t get pissed I just asked." tags="" position="2440,815" size="100,100">&lt;&lt;set $affection -=10&gt;&gt;
+GAME OVER</tw-passagedata><tw-passagedata pid="50" name="Don&#39;t get pissed I just asked." tags="" position="3613.3333333333335,900" size="100,100">&lt;&lt;set $affection -=10&gt;&gt;
 
 You sit together in silence as Wendy eats her pie. The silence is only broken when the waitress comes back to refill her coffee cup. Once Wendy downs her last cup and pays you both part separate ways. 
 
@@ -709,7 +637,7 @@ The ending was awkward to say the least. Maybe next time you can actually muster
 
 [[Go back to Hotel and Sleep-&gt;Wendy Finale]]
 
-affection points: &lt;&lt;print $affection&gt;&gt;</tw-passagedata><tw-passagedata pid="72" name="I mean we are competing brands, alls fair in love and franchise." tags="" position="2565,804" size="100,100">&lt;&lt;set $affection +=0&gt;&gt;
+affection points: &lt;&lt;print $affection&gt;&gt;</tw-passagedata><tw-passagedata pid="51" name="I mean we are competing brands, alls fair in love and franchise." tags="" position="3738.333333333334,899" size="100,100">&lt;&lt;set $affection +=0&gt;&gt;
 
 Her brow furrows as she takes another sip of her coffee. 
 
@@ -721,7 +649,7 @@ You sit together in silence as Wendy eats her pie, staying lost in her thoughts.
 
 [[Go back to Hotel and Sleep-&gt;Wendy Finale]]
 
-affection points: &lt;&lt;print $affection&gt;&gt;</tw-passagedata><tw-passagedata pid="73" name="Well, for the record, your hair looks way better than hers." tags="" position="2703,811" size="100,100">&lt;&lt;set $affection +=10&gt;&gt;
+affection points: &lt;&lt;print $affection&gt;&gt;</tw-passagedata><tw-passagedata pid="52" name="Well, for the record, your hair looks way better than hers." tags="" position="3853,912.6666666666667" size="100,100">&lt;&lt;set $affection +=10&gt;&gt;
 
 She grabs her cup again to take a sip, a smile creeping out from behind the rim.  
 
@@ -735,7 +663,7 @@ You smile back at her and she huffs a laugh. Suddenly her phone starts buzzing.
 
 [[Go back to Hotel and Sleep-&gt;Wendy Finale]]
 
-affection points: &lt;&lt;print $affection&gt;&gt;</tw-passagedata><tw-passagedata pid="74" name="If you&#39;re still clinging to the past then you haven&#39;t actually changed, just pretending to." tags="" position="2172,809" size="100,100">&lt;&lt;set $affection -=10&gt;&gt;
+affection points: &lt;&lt;print $affection&gt;&gt;</tw-passagedata><tw-passagedata pid="53" name="If you&#39;re still clinging to the past then you haven&#39;t actually changed, just pretending to." tags="" position="3330,1020.6666666666667" size="100,100">&lt;&lt;set $affection -=10&gt;&gt;
 
 &quot;You know, what the hell do you know newbie!.&quot; 
 
@@ -752,11 +680,11 @@ You begrudgingly pay Wendy&#39;s check before leaving.
 
 [[Go back to Hotel and Sleep-&gt;Wendy Finale]]
 
-affection points: &lt;&lt;print $affection&gt;&gt;</tw-passagedata><tw-passagedata pid="75" name="It&#39;s good to hold on to some things of the past. They remind you of where you came from." tags="" position="2052,804" size="100,100">
+affection points: &lt;&lt;print $affection&gt;&gt;</tw-passagedata><tw-passagedata pid="54" name="It&#39;s good to hold on to some things of the past. They remind you of where you came from." tags="" position="3218.666666666667,1029" size="100,100">
 - add something here
 
 
-[[Go back to Hotel and Sleep-&gt;Wendy Finale]]</tw-passagedata><tw-passagedata pid="76" name="Who we are now isn&#39;t who we were or who we will be. It helps to be happy with who you are in this moment." tags="" position="2285,804" size="100,100">&lt;&lt;set $affection +=10&gt;&gt;
+[[Go back to Hotel and Sleep-&gt;Wendy Finale]]</tw-passagedata><tw-passagedata pid="55" name="Who we are now isn&#39;t who we were or who we will be. It helps to be happy with who you are in this moment." tags="" position="3450,1015.6666666666667" size="100,100">&lt;&lt;set $affection +=10&gt;&gt;
 
 She grabs her cup again to take a sip, a smile creeping out from behind the rim. 
 
@@ -770,7 +698,7 @@ You smile back at her and she huffs a laugh. Suddenly her phone starts buzzing.
 
 [[Go back to Hotel and Sleep-&gt;Wendy Finale]]
 
-affection points: &lt;&lt;print $affection&gt;&gt;</tw-passagedata><tw-passagedata pid="77" name="Go Meet Wendy" tags="" position="2182,1485" size="100,100">You show up at exactly 9pm. Meanwhile Wendy shows up 15 past the hour. You watch the traffic go buy, effectively spacing out. For a minute you thought you heard her call your name...Well, her nickname for you. Frankly it would be nice to know if she actually knew your real name. 
+affection points: &lt;&lt;print $affection&gt;&gt;</tw-passagedata><tw-passagedata pid="56" name="Go Meet Wendy" tags="" position="3672,1656.6666666666667" size="100,100">You show up at exactly 9pm. Meanwhile Wendy shows up 15 past the hour. You watch the traffic go buy, effectively spacing out. For a minute you thought you heard her call your name...Well, her nickname for you. Frankly it would be nice to know if she actually knew your real name. 
 
 &quot;&lt;&lt;print $name&gt;&gt;!!&quot;
 
@@ -793,19 +721,19 @@ She rubs her forehead as she contemplates her next words.
 
 [[Yes!]]
 
-[[I&#39;ll pass]]</tw-passagedata><tw-passagedata pid="78" name="Yes!" tags="" position="2107,1635" size="100,100">She smiles brightly and your heart melts as she grabs your hand to led the way. 
+[[I&#39;ll pass]]</tw-passagedata><tw-passagedata pid="57" name="Yes!" tags="" position="3535.3333333333335,1808.3333333333333" size="100,100">She smiles brightly and your heart melts as she grabs your hand to led the way. 
 
 &quot;It&#39;s a date then!&quot;
 
 GAME OVER
-YOU WIN</tw-passagedata><tw-passagedata pid="79" name="I&#39;ll pass" tags="" position="2257,1635" size="100,100">&quot;Oh..&quot; She stares at you, processing the words before looking down to the ground. She shoots her clenched fists into her pockets, as she turns around.
+YOU WIN</tw-passagedata><tw-passagedata pid="58" name="I&#39;ll pass" tags="" position="3785.3333333333335,1796.6666666666667" size="100,100">&quot;Oh..&quot; She stares at you, processing the words before looking down to the ground. She shoots her clenched fists into her pockets, as she turns around.
 
 &quot;Well who needs ya anyways...&quot;
 
 You watch as she walks down the sidewalk. Never once looking back. 
 
 GAME OVER
-YOU SUCK</tw-passagedata><tw-passagedata pid="80" name="Money" tags="first-date king" position="462.00000000000006,857.3333333333334" size="100,100">&lt;&lt;set $affection +=5&gt;&gt;
+YOU SUCK</tw-passagedata><tw-passagedata pid="59" name="Money" tags="first-date king" position="898.6666666666667,1130.3333333333335" size="100,100">&lt;&lt;set $affection +=5&gt;&gt;
 
 Affection points: &lt;&lt;print $affection&gt;&gt;
 
@@ -819,7 +747,7 @@ You both spend the rest of the night talking about the different expensive store
 
 Soon the restaurant is closing so you both go back to the limousine and the driver takes you back to the hotel. You both part ways with a gentle hug. He waves goodbye as you walk through the doors of the hotel.
 
-[[King Finale]] </tw-passagedata><tw-passagedata pid="81" name="Fame" tags="" position="478.6666666666667,1000.6666666666669" size="100,100">&lt;&lt;set $affection -=5&gt;&gt;
+[[King Finale]] </tw-passagedata><tw-passagedata pid="60" name="Fame" tags="" position="1019.6666666666667,1140" size="100,100">&lt;&lt;set $affection -=5&gt;&gt;
 
 Affection points: &lt;&lt;print $affection&gt;&gt;
 
@@ -833,7 +761,7 @@ You too continue to talk for the rest of the night. Some things simple questions
 
 Soon the restaurant is closing so you both go back to the limousine and the driver takes you back to the hotel. You both part ways with a gentle hug. He waves goodbye as you walk through the doors of the hotel.
 
-[[King Finale]] </tw-passagedata><tw-passagedata pid="82" name="Family" tags="" position="587,879" size="100,100">&lt;&lt;set $affection +=10&gt;&gt;
+[[King Finale]] </tw-passagedata><tw-passagedata pid="61" name="Family" tags="" position="1253.6666666666667,1132.3333333333333" size="100,100">&lt;&lt;set $affection +=10&gt;&gt;
 
 &quot;Well it was really my family. We would always cook as a family and my father&#39;s specialty was burgers. He always wanted to own his own business but knew he couldn&#39;t. Soon he grew too old too. So I decided to open this business in honor of him using his recipe.&quot;
 
@@ -850,7 +778,7 @@ Time flies by so quickly. Soon the restaurant is closing. You both walk back to 
 [[King Finale]] 
 
 
-</tw-passagedata><tw-passagedata pid="83" name="Nothing else better" tags="" position="607,1010.6666666666666" size="100,100">&lt;&lt;set $affection -=10&gt;&gt;
+</tw-passagedata><tw-passagedata pid="62" name="Nothing else better" tags="" position="1133.6666666666667,1141.6666666666667" size="100,100">&lt;&lt;set $affection -=10&gt;&gt;
 
 Affection points: &lt;&lt;print $affection&gt;&gt;
 
@@ -862,7 +790,7 @@ You both continue to talk about simple likes and dislikes, getting to know more 
 
 You both continue to talk more and more until it;s closing time for the restaurant. You both go back to the limousine and the driver takes you back to the hotel. You both part ways with a gentle hug. He waves goodbye as you walk through the doors of the hotel.
 
-[[King Finale]] </tw-passagedata><tw-passagedata pid="84" name="No!" tags="" position="707,839" size="100,100">&lt;&lt;set $affection +=5&gt;&gt;
+[[King Finale]] </tw-passagedata><tw-passagedata pid="63" name="No!" tags="" position="1515.3333333333333,1294" size="100,100">&lt;&lt;set $affection +=5&gt;&gt;
 
 Affection points: &lt;&lt;print $affection&gt;&gt;
 
@@ -874,7 +802,7 @@ You both talk about little things from your childhood. It&#39;s really nice to h
 
 Soon the restaurant is closing so you both go back to the limousine and the driver takes you back to the hotel. You both part ways with a gentle hug. He waves goodbye as you walk through the doors of the hotel.
 
-[[King Finale]] </tw-passagedata><tw-passagedata pid="85" name="Well...Kinda." tags="" position="827,839" size="100,100">&lt;&lt;set $affection -=10&gt;&gt;
+[[King Finale]] </tw-passagedata><tw-passagedata pid="64" name="Well...Kinda." tags="" position="1672,1315.6666666666667" size="100,100">&lt;&lt;set $affection -=10&gt;&gt;
 
 Affection points: &lt;&lt;print $affection&gt;&gt;
 
@@ -886,7 +814,7 @@ The jab hurts a tad, but you stand strong in your resolve. You truly believe tha
 
 &quot;Excuse me.&quot; He gets up and takes the call. He comes back after a few minutes. &quot;Well I apologize but I have business to attend to. The car outside will take you back to your hotel; I&#39;ll catch a cab. Until next time.&quot; He waves you off and walks to catch his cab outside.
 
-[[King Finale]] </tw-passagedata><tw-passagedata pid="86" name="&quot;French&quot;" tags="" position="892,982.3333333333334" size="100,100">&lt;&lt;set $affection +=10&gt;&gt;
+[[King Finale]] </tw-passagedata><tw-passagedata pid="65" name="&quot;French&quot;" tags="" position="1826,1437" size="100,100">&lt;&lt;set $affection +=10&gt;&gt;
 
 Affection points: &lt;&lt;print $affection&gt;&gt;
 
@@ -900,8 +828,8 @@ You chuckle at his story. You two continue to chat about french dishes and diffe
 
 Before you both know it hours, have gone by and the waiter comes over to tell you both that they are getting ready to close. You both get up and go back to the limousine. He drops you back off at your hotel and walks you to the door. Before you you both say goodnight, he takes your hand and kisses it lightly. You blush deeply at the bold show of affection. He snickers at this and walks back to the car.
 
-[[King Finale]] 
-</tw-passagedata><tw-passagedata pid="87" name="&quot;American&quot;" tags="" position="1012,982.3333333333334" size="100,100">&lt;&lt;set $affection -=10&gt;&gt;
+[[Go to Sleep-&gt;King Finale]] 
+</tw-passagedata><tw-passagedata pid="66" name="&quot;American&quot;" tags="" position="2047,1610.3333333333337" size="100,100">&lt;&lt;set $affection -=10&gt;&gt;
 
 Affection points: &lt;&lt;print $affection&gt;&gt;
 
@@ -915,7 +843,7 @@ You two make small talk about family until the food comes. You thank him for hel
 
 You both talk for a little longer after finishing the food. You both walk back to the limousine and he has the chauffeur drop you off at the hotel.
 
-[[King Finale]] </tw-passagedata><tw-passagedata pid="88" name="&quot;Hispanic&quot;" tags="" position="936.6666666666666,869.3333333333333" size="100,100">&lt;&lt;set $affection +=5&gt;&gt;
+[[Go to Slee-&gt;King Finale]] </tw-passagedata><tw-passagedata pid="67" name="&quot;Hispanic&quot;" tags="" position="1946,1512.3333333333333" size="100,100">&lt;&lt;set $affection +=5&gt;&gt;
 
 Affection points: &lt;&lt;print $affection&gt;&gt;
 
@@ -927,7 +855,7 @@ A look of confusion but curiosity peaks on his face.
 
 You begin to explain different things about the culture to him and the food. He looks intrigued by the things you say and shows complete curiosity to learn more. You talk for a couple of hours and then the both of you walk back to the limousine. He has the chauffeur drop you off at the hotel and waves you goodnight as the car pulls off.
 
-[[King Finale]] </tw-passagedata><tw-passagedata pid="89" name="&quot;Asian&quot;" tags="" position="1038.3333333333333,872.6666666666666" size="100,100">Affection points: &lt;&lt;print $affection&gt;&gt;
+[[Go to Sleep-&gt;King Finale]] </tw-passagedata><tw-passagedata pid="68" name="&quot;Asian&quot;" tags="" position="2161.3333333333335,1700.3333333333335" size="100,100">&lt;&lt;set $affection +=0&gt;&gt;
 
 The King nods his head in acknowledgement. 
 
@@ -937,7 +865,24 @@ You frown slightly in disappointment. You both pass the time by talking about yo
 
 An hour or two go by and you both walk back to the limousine and he has the chauffeur take you back to the hotel. He waves goodbye as the car drives away.
 
-[[King Finale]] </tw-passagedata></tw-storydata>
+[[Go to Sleep-&gt;King Finale]] 
+
+Affection points: &lt;&lt;print $affection&gt;&gt;</tw-passagedata><tw-passagedata pid="69" name="Get dressed for the day" tags="" position="1410.0000000000002,1995.0000000000002" size="100,100">Time moves quickly and soon it is time for the lunch. He picks you up as promised. He is very silent in the car. He almost looks nervous. You try to make small convo to loosen him up but he doesn&#39;t seem to budge. You both arrive at the restaurant and order. After taking your seats you decide to ask him whats wrong.
+
+&quot;Hey. Are you okay? You seem stressed or nervous.&quot; 
+
+He sighs &quot;Okay So, on that.....okay...&lt;&lt;print $name&gt;&gt;, I have decided that I really like you a lot. And I would like to be like a steady thing. Only if you wanted to also. I don&#39;t want to force anything. But I would also be really happy if we were. Oh no now I&#39;m rambling.&quot;
+
+You laugh at his cute display of love. &quot;I would love nothing more than to be in a relationship with you.&quot; He sighs in relief and smiles. 
+
+&quot;Amazing mon doudou.&quot;
+
+GAME OVER
+YOU WIN</tw-passagedata><tw-passagedata pid="70" name="View the sculpture" tags="" position="1101.6666666666667,382.6666666666667" size="100,100">Double-click this passage to edit it.</tw-passagedata><tw-passagedata pid="71" name="Admire the band" tags="" position="1179.6666666666667,252.66666666666666" size="100,100">You walk up to the band&#39;s platform where several onlookers are standing. They continue to sip champagne nonchalantly as music flows through the room. 
+
+&quot;Quite a lovely show isn&#39;t it?&quot;
+
+You turn around. Behind you stands a young man, no older than in his late twenties, sipping a glass of chardonnay. He&#39;s a tall, lean fellow, with green irises that contrast brightly with this sun kissed skin. </tw-passagedata><tw-passagedata pid="72" name="Grab a bite to eat" tags="" position="1189.6666666666667,81" size="100,100">Double-click this passage to edit it.</tw-passagedata></tw-storydata>
 	<script id="script-sugarcube" type="text/javascript">
 	/*! SugarCube JS */
 	if(document.documentElement.getAttribute("data-init")==="loading"){!function(window,document,jQuery,undefined){"use strict";function _classCallCheck(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,r=Array(e.length);t<e.length;t++)r[t]=e[t];return r}return Array.from(e)}var _createClass=function(){function e(e,t){for(var r=0;r<t.length;r++){var n=t[r];n.enumerable=n.enumerable||!1,n.configurable=!0,"value"in n&&(n.writable=!0),Object.defineProperty(e,n.key,n)}}return function(t,r,n){return r&&e(t.prototype,r),n&&e(t,n),t}}(),_slicedToArray=function(){function e(e,t){var r=[],n=!0,a=!1,i=undefined;try{for(var o,s=e[Symbol.iterator]();!(n=(o=s.next()).done)&&(r.push(o.value),!t||r.length!==t);n=!0);}catch(e){a=!0,i=e}finally{try{!n&&s.return&&s.return()}finally{if(a)throw i}}return r}return function(t,r){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,r);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},errorPrologRegExp=/^(?:(?:uncaught\s+(?:exception:\s+)?)?\w*(?:error|exception|_err):\s+)+/i,Alert=function(){function e(e,t,r,n){var a="fatal"===e,i="Apologies! "+(a?"A fatal":"An")+" error has occurred.";i+=a?" Aborting.":" You may be able to continue, but some parts may not work properly.",null==t&&null==r||(i+="\n\nError",null!=t&&(i+=" ["+t+"]"),i+=null!=r?": "+r.replace(errorPrologRegExp,"")+".":": unknown error."),"object"===(void 0===n?"undefined":_typeof(n))&&n.stack&&(i+="\n\nStack Trace:\n"+n.stack),window.alert(i)}function t(t,r,n){e(null,t,r,n)}function r(t,r,n){e("fatal",t,r,n)}return function(e){window.onerror=function(n,a,i,o,s){"complete"===document.readyState?t(null,n,s):(r(null,n,s),window.onerror=e,"function"==typeof window.onerror&&window.onerror.apply(this,arguments))}}(window.onerror),Object.freeze(Object.defineProperties({},{error:{value:t},fatal:{value:r}}))}(),Patterns=function(){var e=function(){var e=new Map([[" ","\\u0020"],["\f","\\f"],["\n","\\n"],["\r","\\r"],["\t","\\t"],["\v","\\v"],[" ","\\u00a0"],[" ","\\u1680"],["᠎","\\u180e"],[" ","\\u2000"],[" ","\\u2001"],[" ","\\u2002"],[" ","\\u2003"],[" ","\\u2004"],[" ","\\u2005"],[" ","\\u2006"],[" ","\\u2007"],[" ","\\u2008"],[" ","\\u2009"],[" ","\\u200a"],["\u2028","\\u2028"],["\u2029","\\u2029"],[" ","\\u202f"],[" ","\\u205f"],["　","\\u3000"],["\ufeff","\\ufeff"]]),t=/^\s$/,r="";return e.forEach(function(e,n){t.test(n)||(r+=e)}),r?"[\\s"+r+"]":"\\s"}(),t="\\s"===e?"\\S":e.replace(/^\[/,"[^"),r="[0-9A-Z_a-z\\-\\u00c0-\\u00d6\\u00d8-\\u00f6\\u00f8-\\u00ff\\u0150\\u0170\\u0151\\u0171]",n=r.replace("\\-",""),a=function(){return"("+r+"+)\\(([^\\)\\|\\n]+)\\):|("+r+"+):([^;\\|\\n]+);|((?:\\."+r+"+)+);|((?:#"+r+"+)+);"}();return Object.freeze({space:e,spaceNoTerminator:"[\\u0020\\f\\t\\v\\u00a0\\u1680\\u180e\\u2000-\\u200a\\u202f\\u205f\\u3000\\ufeff]",lineTerminator:"[\\n\\r\\u2028\\u2029]",notSpace:t,anyChar:"(?:.|[\\n\\r\\u2028\\u2029])",anyLetter:r,anyLetterStrict:n,identifierFirstChar:"[$A-Z_a-z]",identifierNextChar:"[$0-9A-Z_a-z]",identifier:"[$A-Z_a-z][$0-9A-Z_a-z]*",variableSigil:"[$_]",variable:"[$_][$A-Z_a-z][$0-9A-Z_a-z]*",macroName:"[A-Za-z][\\w-]*|[=-]",templateName:"[A-Za-z][\\w-]*",cssImage:"\\[[<>]?[Ii][Mm][Gg]\\[(?:\\s|\\S)*?\\]\\]+",inlineCss:a,url:"(?:file|https?|mailto|ftp|javascript|irc|news|data):[^\\s'\"]+"})}();!function(){!function(e){if(e&&e.prototype&&null==e.prototype.firstElementChild){var t=Node.ELEMENT_NODE;Object.defineProperty(e.prototype,"firstElementChild",{get:function(){for(var e=this.childNodes,r=0;r<e.length;++r){var n=e[r];if(n.nodeType===t)return n}return null}})}}(window.Node||window.Element)}(),function(){function e(e,t){var r=Number.parseInt(e,10)||0;if(r<1)return"";var n=void 0===t?"":String(t);for(""===n&&(n=" ");n.length<r;){var a=n.length,i=r-a;n+=a>i?n.slice(0,i):n}return n.length>r&&(n=n.slice(0,r)),n}var t=function(){function e(e,n){var a=String(e);if(!a)return a;switch(n){case"start":return t.test(a)?a.replace(t,""):a;case"end":return r.test(a)?a.replace(r,""):a;default:throw new Error('_trimString called with incorrect where parameter value: "'+n+'"')}}var t=new RegExp("^"+Patterns.space+Patterns.space+"*"),r=new RegExp(""+Patterns.space+Patterns.space+"*$");return e}();Array.prototype.flat||Object.defineProperty(Array.prototype,"flat",{configurable:!0,writable:!0,value:function(){function e(){if(null==this)throw new TypeError("Array.prototype.flat called on null or undefined");var t=0===arguments.length?1:Number(arguments[0])||0;return t<1?Array.prototype.slice.call(this):Array.prototype.reduce.call(this,function(r,n){return n instanceof Array?r.push.apply(r,_toConsumableArray(e.call(n,t-1))):r.push(n),r},[])}return e}()}),Array.prototype.flatMap||Object.defineProperty(Array.prototype,"flatMap",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.flatMap called on null or undefined");return Array.prototype.map.apply(this,arguments).flat()}}),Array.prototype.includes||Object.defineProperty(Array.prototype,"includes",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.includes called on null or undefined");if(0===arguments.length)return!1;var e=this.length>>>0;if(0===e)return!1;var t=arguments[0],r=Number(arguments[1])||0;for(r<0&&(r=Math.max(0,e+r));r<e;++r){var n=this[r];if(n===t||n!==n&&t!==t)return!0}return!1}}),Object.entries||Object.defineProperty(Object,"entries",{configurable:!0,writable:!0,value:function(e){if("object"!==(void 0===e?"undefined":_typeof(e))||null===e)throw new TypeError("Object.entries object parameter must be an object");return Object.keys(e).map(function(t){return[t,e[t]]})}}),Object.fromEntries||Object.defineProperty(Object,"fromEntries",{configurable:!0,writable:!0,value:function(e){return Array.from(e).reduce(function(e,t){if(Object(t)!==t)throw new TypeError("Object.fromEntries iterable parameter must yield objects");return t[0]in e?Object.defineProperty(e,t[0],{configurable:!0,enumerable:!0,writable:!0,value:t[1]}):e[t[0]]=t[1],e},{})}}),Object.getOwnPropertyDescriptors||Object.defineProperty(Object,"getOwnPropertyDescriptors",{configurable:!0,writable:!0,value:function(e){if(null==e)throw new TypeError("Object.getOwnPropertyDescriptors object parameter is null or undefined");var t=Object(e);return Reflect.ownKeys(t).reduce(function(e,r){var n=Object.getOwnPropertyDescriptor(t,r);return void 0!==n&&(r in e?Object.defineProperty(e,r,{configurable:!0,enumerable:!0,writable:!0,value:n}):e[r]=n),e},{})}}),Object.values||Object.defineProperty(Object,"values",{configurable:!0,writable:!0,value:function(e){if("object"!==(void 0===e?"undefined":_typeof(e))||null===e)throw new TypeError("Object.values object parameter must be an object");return Object.keys(e).map(function(t){return e[t]})}}),String.prototype.padStart||Object.defineProperty(String.prototype,"padStart",{configurable:!0,writable:!0,value:function(t,r){if(null==this)throw new TypeError("String.prototype.padStart called on null or undefined");var n=String(this),a=n.length,i=Number.parseInt(t,10);return i<=a?n:e(i-a,r)+n}}),String.prototype.padEnd||Object.defineProperty(String.prototype,"padEnd",{configurable:!0,writable:!0,value:function(t,r){if(null==this)throw new TypeError("String.prototype.padEnd called on null or undefined");var n=String(this),a=n.length,i=Number.parseInt(t,10);return i<=a?n:n+e(i-a,r)}}),String.prototype.trimStart||Object.defineProperty(String.prototype,"trimStart",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.trimStart called on null or undefined");return t(this,"start")}}),String.prototype.trimLeft||Object.defineProperty(String.prototype,"trimLeft",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.trimLeft called on null or undefined");return t(this,"start")}}),String.prototype.trimEnd||Object.defineProperty(String.prototype,"trimEnd",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.trimEnd called on null or undefined");return t(this,"end")}}),String.prototype.trimRight||Object.defineProperty(String.prototype,"trimRight",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.trimRight called on null or undefined");return t(this,"end")}})}(),function(){function _random(){var e=void 0,t=void 0;switch(arguments.length){case 0:throw new Error("_random called with insufficient parameters");case 1:e=0,t=arguments[0];break;default:e=arguments[0],t=arguments[1]}if(e>t){var r=[t,e];e=r[0],t=r[1]}return Math.floor(_nativeMathRandom()*(t-e+1))+e}function _randomIndex(e,t){var r=void 0,n=void 0;switch(t.length){case 1:r=0,n=e-1;break;case 2:r=0,n=Math.trunc(t[1]);break;default:r=Math.trunc(t[1]),n=Math.trunc(t[2])}return Number.isNaN(r)?r=0:!Number.isFinite(r)||r>=e?r=e-1:r<0&&(r=e+r)<0&&(r=0),Number.isNaN(n)?n=0:!Number.isFinite(n)||n>=e?n=e-1:n<0&&(n=e+n)<0&&(n=e-1),_random(r,n)}function _getCodePointStartAndEnd(e,t){var r=e.charCodeAt(t);if(Number.isNaN(r))return{char:"",start:-1,end:-1};if(r<55296||r>57343)return{char:e.charAt(t),start:t,end:t};if(r>=55296&&r<=56319){var n=t+1;if(n>=e.length)throw new Error("high surrogate without trailing low surrogate");var a=e.charCodeAt(n);if(a<56320||a>57343)throw new Error("high surrogate without trailing low surrogate");return{char:e.charAt(t)+e.charAt(n),start:t,end:n}}if(0===t)throw new Error("low surrogate without leading high surrogate");var i=t-1,o=e.charCodeAt(i);if(o<55296||o>56319)throw new Error("low surrogate without leading high surrogate");return{char:e.charAt(i)+e.charAt(t),start:i,end:t}}var _nativeMathRandom=Math.random;Object.defineProperty(Array,"random",{configurable:!0,writable:!0,value:function(e){if("object"!==(void 0===e?"undefined":_typeof(e))||null===e||!Object.prototype.hasOwnProperty.call(e,"length"))throw new TypeError("Array.random array parameter must be an array or array-lke object");var t=e.length>>>0;if(0!==t){return e[0===arguments.length?_random(0,t-1):_randomIndex(t,Array.prototype.slice.call(arguments,1))]}}}),Object.defineProperty(Array.prototype,"concatUnique",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.concatUnique called on null or undefined");var e=Array.from(this);if(0===arguments.length)return e;var t=Array.prototype.reduce.call(arguments,function(e,t){return e.concat(t)},[]),r=t.length;if(0===r)return e;for(var n=Array.prototype.indexOf,a=Array.prototype.push,i=0;i<r;++i){var o=t[i];-1===n.call(e,o)&&a.call(e,o)}return e}}),Object.defineProperty(Array.prototype,"count",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.count called on null or undefined");for(var e=Array.prototype.indexOf,t=arguments[0],r=Number(arguments[1])||0,n=0;-1!==(r=e.call(this,t,r));)++n,++r;return n}}),Object.defineProperty(Array.prototype,"delete",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.delete called on null or undefined");if(0===arguments.length)return[];var e=this.length>>>0;if(0===e)return[];for(var t=Array.prototype.concat.apply([],arguments),r=t.length,n=[],a=0;a<e;++a)for(var i=this[a],o=0;o<r;++o){var s=t[o];if(i===s||i!==i&&s!==s){n.push(a);break}}for(var u=[],l=0,c=n.length;l<c;++l)u[l]=this[n[l]];for(var d=Array.prototype.splice,f=n.length-1;f>=0;--f)d.call(this,n[f],1);return u}}),Object.defineProperty(Array.prototype,"deleteAt",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.deleteAt called on null or undefined");if(0===arguments.length)return[];var e=this.length>>>0;if(0===e)return[];for(var t=Array.prototype.splice,r=[].concat(_toConsumableArray(new Set(Array.prototype.concat.apply([],arguments).map(function(t){return t<0?Math.max(0,e+t):t})).values())),n=[].concat(_toConsumableArray(r)).sort(function(e,t){return t-e}),a=[],i=0,o=r.length;i<o;++i)a[i]=this[r[i]];for(var s=0,u=n.length;s<u;++s)t.call(this,n[s],1);return a}}),Object.defineProperty(Array.prototype,"deleteWith",{configurable:!0,writable:!0,value:function(e,t){if(null==this)throw new TypeError("Array.prototype.deleteWith called on null or undefined");if("function"!=typeof e)throw new Error("Array.prototype.deleteWith predicate parameter must be a function");var r=this.length>>>0;if(0===r)return[];for(var n=Array.prototype.splice,a=[],i=[],o=0;o<r;++o)e.call(t,this[o],o,this)&&(i.push(this[o]),a.push(o));for(var s=a.length-1;s>=0;--s)n.call(this,a[s],1);return i}}),Object.defineProperty(Array.prototype,"first",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.first called on null or undefined");if(0!=this.length>>>0)return this[0]}}),Object.defineProperty(Array.prototype,"includesAll",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.includesAll called on null or undefined");if(1===arguments.length)return Array.isArray(arguments[0])?Array.prototype.includesAll.apply(this,arguments[0]):Array.prototype.includes.apply(this,arguments);for(var e=0,t=arguments.length;e<t;++e)if(!Array.prototype.some.call(this,function(e){return e===this.val||e!==e&&this.val!==this.val},{val:arguments[e]}))return!1;return!0}}),Object.defineProperty(Array.prototype,"includesAny",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.includesAny called on null or undefined");if(1===arguments.length)return Array.isArray(arguments[0])?Array.prototype.includesAny.apply(this,arguments[0]):Array.prototype.includes.apply(this,arguments);for(var e=0,t=arguments.length;e<t;++e)if(Array.prototype.some.call(this,function(e){return e===this.val||e!==e&&this.val!==this.val},{val:arguments[e]}))return!0;return!1}}),Object.defineProperty(Array.prototype,"last",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.last called on null or undefined");var e=this.length>>>0;if(0!==e)return this[e-1]}}),Object.defineProperty(Array.prototype,"pluck",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.pluck called on null or undefined");var e=this.length>>>0;if(0!==e){var t=0===arguments.length?_random(0,e-1):_randomIndex(e,[].concat(Array.prototype.slice.call(arguments)));return Array.prototype.splice.call(this,t,1)[0]}}}),Object.defineProperty(Array.prototype,"pluckMany",{configurable:!0,writable:!0,value:function(e){if(null==this)throw new TypeError("Array.prototype.pluckMany called on null or undefined");var t=this.length>>>0;if(0===t)return[];var r=Math.trunc(e);if(!Number.isInteger(r))throw new Error("Array.prototype.pluckMany want parameter must be an integer");if(r<1)return[];r>t&&(r=t);var n=Array.prototype.splice,a=[],i=t-1;do{a.push(n.call(this,_random(0,i--),1)[0])}while(a.length<r);return a}}),Object.defineProperty(Array.prototype,"pushUnique",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.pushUnique called on null or undefined");var e=arguments.length;if(0===e)return this.length>>>0;for(var t=Array.prototype.indexOf,r=Array.prototype.push,n=0;n<e;++n){var a=arguments[n];-1===t.call(this,a)&&r.call(this,a)}return this.length>>>0}}),Object.defineProperty(Array.prototype,"random",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.random called on null or undefined");var e=this.length>>>0;if(0!==e){return this[0===arguments.length?_random(0,e-1):_randomIndex(e,[].concat(Array.prototype.slice.call(arguments)))]}}}),Object.defineProperty(Array.prototype,"randomMany",{configurable:!0,writable:!0,value:function(e){if(null==this)throw new TypeError("Array.prototype.randomMany called on null or undefined");var t=this.length>>>0;if(0===t)return[];var r=Math.trunc(e);if(!Number.isInteger(r))throw new Error("Array.prototype.randomMany want parameter must be an integer");if(r<1)return[];r>t&&(r=t);var n=new Map,a=[],i=t-1;do{var o=void 0;do{o=_random(0,i)}while(n.has(o));n.set(o,!0),a.push(this[o])}while(a.length<r);return a}}),Object.defineProperty(Array.prototype,"shuffle",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.shuffle called on null or undefined");var e=this.length>>>0;if(0===e)return this;for(var t=e-1;t>0;--t){var r=Math.floor(_nativeMathRandom()*(t+1));if(t!==r){var n=this[t];this[t]=this[r],this[r]=n}}return this}}),Object.defineProperty(Array.prototype,"unshiftUnique",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.unshiftUnique called on null or undefined");var e=arguments.length;if(0===e)return this.length>>>0;for(var t=Array.prototype.indexOf,r=Array.prototype.unshift,n=0;n<e;++n){var a=arguments[n];-1===t.call(this,a)&&r.call(this,a)}return this.length>>>0}}),Object.defineProperty(Function.prototype,"partial",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Function.prototype.partial called on null or undefined");var e=Array.prototype.slice,t=this,r=e.call(arguments,0);return function(){for(var n=[],a=0,i=0;i<r.length;++i)n.push(r[i]===undefined?arguments[a++]:r[i]);return t.apply(this,n.concat(e.call(arguments,a)))}}}),Object.defineProperty(Math,"clamp",{configurable:!0,writable:!0,value:function(e,t,r){var n=Number(e);return Number.isNaN(n)?NaN:n.clamp(t,r)}}),Object.defineProperty(Math,"easeInOut",{configurable:!0,writable:!0,value:function(e){return 1-(Math.cos(Number(e)*Math.PI)+1)/2}}),Object.defineProperty(Number.prototype,"clamp",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Number.prototype.clamp called on null or undefined");if(2!==arguments.length)throw new Error("Number.prototype.clamp called with an incorrect number of parameters");var e=Number(arguments[0]),t=Number(arguments[1]);if(e>t){var r=[t,e];e=r[0],t=r[1]}return Math.min(Math.max(this,e),t)}}),RegExp.escape||function(){var e=/[\\^$*+?.()|[\]{}]/g,t=new RegExp(e.source);Object.defineProperty(RegExp,"escape",{configurable:!0,writable:!0,value:function(r){var n=String(r);return n&&t.test(n)?n.replace(e,"\\$&"):n}})}(),function(){var e=/{(\d+)(?:,([+-]?\d+))?}/g,t=new RegExp(e.source);Object.defineProperty(String,"format",{configurable:!0,writable:!0,value:function(r){function n(e,t,r){if(!t)return e;var n=Math.abs(t)-e.length;if(n<1)return e;var a=String(r).repeat(n);return t<0?e+a:a+e}if(arguments.length<2)return 0===arguments.length?"":r;var a=2===arguments.length&&Array.isArray(arguments[1])?[].concat(_toConsumableArray(arguments[1])):Array.prototype.slice.call(arguments,1);return 0===a.length?r:t.test(r)?(e.lastIndex=0,r.replace(e,function(e,t,r){var i=a[t];if(null==i)return"";for(;"function"==typeof i;)i=i();switch(void 0===i?"undefined":_typeof(i)){case"string":break;case"object":i=JSON.stringify(i);break;default:i=String(i)}return n(i,r?Number.parseInt(r,10):0," ")})):r}})}(),Object.defineProperty(String.prototype,"contains",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.contains called on null or undefined");return-1!==String.prototype.indexOf.apply(this,arguments)}}),Object.defineProperty(String.prototype,"count",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.count called on null or undefined");var e=String(arguments[0]||"");if(""===e)return 0;for(var t=String.prototype.indexOf,r=e.length,n=Number(arguments[1])||0,a=0;-1!==(n=t.call(this,e,n));)++a,n+=r;return a}}),Object.defineProperty(String.prototype,"first",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.first called on null or undefined");return _getCodePointStartAndEnd(String(this),0).char}}),Object.defineProperty(String.prototype,"last",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.last called on null or undefined");var e=String(this);return _getCodePointStartAndEnd(e,e.length-1).char}}),Object.defineProperty(String.prototype,"splice",{configurable:!0,writable:!0,value:function(e,t,r){if(null==this)throw new TypeError("String.prototype.splice called on null or undefined");var n=this.length>>>0;if(0===n)return"";var a=Number(e);Number.isSafeInteger(a)?a<0&&(a+=n)<0&&(a=0):a=0,a>n&&(a=n);var i=Number(t);(!Number.isSafeInteger(i)||i<0)&&(i=0);var o=this.slice(0,a);return void 0!==r&&(o+=r),a+i<n&&(o+=this.slice(a+i)),o}}),Object.defineProperty(String.prototype,"splitOrEmpty",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.splitOrEmpty called on null or undefined");return""===String(this)?[]:String.prototype.split.apply(this,arguments)}}),Object.defineProperty(String.prototype,"toLocaleUpperFirst",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.toLocaleUpperFirst called on null or undefined");var e=String(this),t=_getCodePointStartAndEnd(e,0),r=t.char,n=t.end;return-1===n?"":r.toLocaleUpperCase()+e.slice(n+1)}}),Object.defineProperty(String.prototype,"toUpperFirst",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.toUpperFirst called on null or undefined");var e=String(this),t=_getCodePointStartAndEnd(e,0),r=t.char,n=t.end;return-1===n?"":r.toUpperCase()+e.slice(n+1)}}),Object.defineProperty(Date.prototype,"toJSON",{configurable:!0,writable:!0,value:function(){return["(revive:date)",this.toISOString()]}}),Object.defineProperty(Function.prototype,"toJSON",{configurable:!0,writable:!0,value:function(){return["(revive:eval)","("+this.toString()+")"]}}),Object.defineProperty(Map.prototype,"toJSON",{configurable:!0,writable:!0,value:function(){return["(revive:map)",[].concat(_toConsumableArray(this))]}}),Object.defineProperty(RegExp.prototype,"toJSON",{configurable:!0,writable:!0,value:function(){return["(revive:eval)",this.toString()]}}),Object.defineProperty(Set.prototype,"toJSON",{configurable:!0,writable:!0,value:function(){return["(revive:set)",[].concat(_toConsumableArray(this))]}}),Object.defineProperty(JSON,"reviveWrapper",{configurable:!0,writable:!0,value:function(e,t){if("string"!=typeof e)throw new TypeError("JSON.reviveWrapper code parameter must be a string");return["(revive:eval)",[e,t]]}}),Object.defineProperty(JSON,"_real_parse",{value:JSON.parse}),Object.defineProperty(JSON,"parse",{configurable:!0,writable:!0,value:function value(text,reviver){return JSON._real_parse(text,function(key,val){var value=val;if(Array.isArray(value)&&2===value.length)switch(value[0]){case"(revive:set)":value=new Set(value[1]);break;case"(revive:map)":value=new Map(value[1]);break;case"(revive:date)":value=new Date(value[1]);break;case"(revive:eval)":try{if(Array.isArray(value[1])){var $ReviveData$=value[1][1];value=eval(value[1][0])}else value=eval(value[1])}catch(e){}}else if("string"==typeof value&&"@@revive@@"===value.slice(0,10))try{value=eval(value.slice(10))}catch(e){}if("function"==typeof reviver)try{value=reviver(key,value)}catch(e){}return value})}}),Object.defineProperty(Array.prototype,"contains",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.contains called on null or undefined");return Array.prototype.includes.apply(this,arguments)}}),Object.defineProperty(Array.prototype,"containsAll",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.containsAll called on null or undefined");return Array.prototype.includesAll.apply(this,arguments)}}),Object.defineProperty(Array.prototype,"containsAny",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.containsAny called on null or undefined");return Array.prototype.includesAny.apply(this,arguments)}}),Object.defineProperty(Array.prototype,"flatten",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("Array.prototype.flatten called on null or undefined");return Array.prototype.flat.call(this,1/0)}}),Object.defineProperty(String.prototype,"readBracketedList",{configurable:!0,writable:!0,value:function(){if(null==this)throw new TypeError("String.prototype.readBracketedList called on null or undefined");for(var e=new RegExp("(?:\\[\\[((?:\\s|\\S)*?)\\]\\])|([^\"'\\s]\\S*)","gm"),t=[],r=void 0;null!==(r=e.exec(this));)r[1]?t.push(r[1]):r[2]&&t.push(r[2]);return t}})}();var Browser=function(){var e=navigator.userAgent.toLowerCase(),t=e.includes("windows phone"),r=Object.freeze({Android:!t&&e.includes("android"),BlackBerry:/blackberry|bb10/.test(e),iOS:!t&&/ip(?:hone|ad|od)/.test(e),Opera:!t&&("object"===_typeof(window.operamini)||e.includes("opera mini")),Windows:t||/iemobile|wpdesktop/.test(e),any:function(){return r.Android||r.BlackBerry||r.iOS||r.Opera||r.Windows}}),n=!r.Windows&&!/khtml|trident|edge/.test(e)&&e.includes("gecko"),a=!e.includes("opera")&&/msie|trident/.test(e),i=a?function(){var t=/(?:msie\s+|rv:)(\d+\.\d)/.exec(e);return t?Number(t[1]):0}():null,o=e.includes("opera")||e.includes(" opr/"),s=o?function(){var t=new RegExp((/khtml|chrome/.test(e)?"opr":"version")+"\\/(\\d+\\.\\d+)"),r=t.exec(e);return r?Number(r[1]):0}():null,u=e.includes("vivaldi");return Object.freeze({userAgent:e,isMobile:r,isGecko:n,isIE:a,ieVersion:i,isOpera:o,operaVersion:s,isVivaldi:u})}(),Has=function(){var e=function(){try{return"function"==typeof document.createElement("audio").canPlayType}catch(e){}return!1}(),t=e&&function(){try{var e=document.createElement("audio").play();return e.catch(function(){}),e instanceof Promise}catch(e){}return!1}(),r=function(){try{return"Blob"in window&&"File"in window&&"FileList"in window&&"FileReader"in window&&!Browser.isMobile.any()&&(!Browser.isOpera||Browser.operaVersion>=15)}catch(e){}return!1}(),n=function(){try{return"geolocation"in navigator&&"function"==typeof navigator.geolocation.getCurrentPosition&&"function"==typeof navigator.geolocation.watchPosition}catch(e){}return!1}(),a=function(){try{return"MutationObserver"in window&&"function"==typeof window.MutationObserver}catch(e){}return!1}(),i=function(){try{return"performance"in window&&"function"==typeof window.performance.now}catch(e){}return!1}(),o=function(){try{return"ontouchstart"in window||!!window.DocumentTouch&&document instanceof window.DocumentTouch||!!navigator.maxTouchPoints||!!navigator.msMaxTouchPoints}catch(e){}return!1}(),s=function(){try{for(var e=new Map([["transition","transitionend"],["MSTransition","msTransitionEnd"],["WebkitTransition","webkitTransitionEnd"],["MozTransition","transitionend"]]),t=[].concat(_toConsumableArray(e.keys())),r=document.createElement("div"),n=0;n<t.length;++n)if(r.style[t[n]]!==undefined)return e.get(t[n])}catch(e){}return!1}();return Object.freeze({audio:e,audioPromise:t,fileAPI:r,geolocation:n,mutationObserver:a,performance:i,touch:o,transitionEndEvent:s})}(),Visibility=function(){function e(){return Boolean(r&&document[r.hiddenProperty])}function t(){return r&&document[r.stateProperty]||"visible"}var r=function(){try{return Object.freeze([{hiddenProperty:"hidden",stateProperty:"visibilityState",changeEvent:"visibilitychange"},{hiddenProperty:"webkitHidden",stateProperty:"webkitVisibilityState",changeEvent:"webkitvisibilitychange"},{hiddenProperty:"mozHidden",stateProperty:"mozVisibilityState",changeEvent:"mozvisibilitychange"},{hiddenProperty:"msHidden",stateProperty:"msVisibilityState",changeEvent:"msvisibilitychange"}].find(function(e){return e.hiddenProperty in document}))}catch(e){}return null}();return Object.freeze(Object.defineProperties({},{isHidden:{value:e},state:{value:t},hiddenProperty:{value:r.hiddenProperty},stateProperty:{value:r.stateProperty},changeEvent:{value:r.changeEvent}}))}(),_ref3=function(){function e(t){if("object"!==(void 0===t?"undefined":_typeof(t))||null===t)return t;if(t instanceof String)return String(t);if(t instanceof Number)return Number(t);if(t instanceof Boolean)return Boolean(t);if("function"==typeof t.clone)return t.clone(!0);if(t.nodeType&&"function"==typeof t.cloneNode)return t.cloneNode(!0);var r=void 0;return t instanceof Array?r=new Array(t.length):t instanceof Date?r=new Date(t.getTime()):t instanceof Map?(r=new Map,t.forEach(function(t,n){return r.set(n,e(t))})):t instanceof RegExp?r=new RegExp(t):t instanceof Set?(r=new Set,t.forEach(function(t){return r.add(e(t))})):r=Object.create(Object.getPrototypeOf(t)),Object.keys(t).forEach(function(n){return r[n]=e(t[n])}),r}function t(e){for(var t=document.createDocumentFragment(),r=document.createElement("p"),n=void 0;null!==(n=e.firstChild);){if(n.nodeType===Node.ELEMENT_NODE){switch(n.nodeName.toUpperCase()){case"BR":if(null!==n.nextSibling&&n.nextSibling.nodeType===Node.ELEMENT_NODE&&"BR"===n.nextSibling.nodeName.toUpperCase()){e.removeChild(n.nextSibling),e.removeChild(n),t.appendChild(r),r=document.createElement("p");continue}if(!r.hasChildNodes()){e.removeChild(n);continue}break;case"ADDRESS":case"ARTICLE":case"ASIDE":case"BLOCKQUOTE":case"CENTER":case"DIV":case"DL":case"FIGURE":case"FOOTER":case"FORM":case"H1":case"H2":case"H3":case"H4":case"H5":case"H6":case"HEADER":case"HR":case"MAIN":case"NAV":case"OL":case"P":case"PRE":case"SECTION":case"TABLE":case"UL":r.hasChildNodes()&&(t.appendChild(r),r=document.createElement("p")),t.appendChild(n);continue}}r.appendChild(n)}r.hasChildNodes()&&t.appendChild(r),e.appendChild(t)}function r(){try{return document.activeElement||null}catch(e){return null}}function n(e,t,r){var n="object"===(void 0===e?"undefined":_typeof(e))?e:document.getElementById(e);if(null==n)return null;var a=Array.isArray(t)?t:[t];jQuery(n).empty();for(var i=0,o=a.length;i<o;++i)if(Story.has(a[i]))return new Wikifier(n,Story.get(a[i]).processText().trim()),n;if(null!=r){var s=String(r).trim();""!==s&&new Wikifier(n,s)}return n}function a(e,t,r){var n=jQuery(document.createElement("div")),a=jQuery(document.createElement("button")),i=jQuery(document.createElement("pre")),o=L10n.get("errorTitle")+": "+(t||"unknown error");return a.addClass("error-toggle").ariaClick({label:L10n.get("errorToggle")},function(){a.hasClass("enabled")?(a.removeClass("enabled"),i.attr({"aria-hidden":!0,hidden:"hidden"})):(a.addClass("enabled"),i.removeAttr("aria-hidden hidden"))}).appendTo(n),jQuery(document.createElement("span")).addClass("error").text(o).appendTo(n),jQuery(document.createElement("code")).text(r).appendTo(i),i.addClass("error-source").attr({"aria-hidden":!0,hidden:"hidden"}).appendTo(n),n.addClass("error-view").appendTo(e),console.warn(o+"\n\t"+r.replace(/\n/g,"\n\t")),!1}function i(e,t){var r=i;switch(void 0===e?"undefined":_typeof(e)){case"number":if(Number.isNaN(e))return t;break;case"object":if(null===e)return t;if(Array.isArray(e))return e.map(function(e){return r(e,t)}).join(", ");if(e instanceof Set)return[].concat(_toConsumableArray(e)).map(function(e){return r(e,t)}).join(", ");if(e instanceof Map){return"{ "+[].concat(_toConsumableArray(e)).map(function(e){var n=_slicedToArray(e,2),a=n[0],i=n[1];return r(a,t)+" → "+r(i,t)}).join(", ")+" }"}return e instanceof Date?e.toLocaleString():"function"==typeof e.toString?e.toString():Object.prototype.toString.call(e);case"function":case"undefined":return t}return String(e)}return Object.freeze(Object.defineProperties({},{clone:{value:e},convertBreaks:{value:t},safeActiveElement:{value:r},setPageElement:{value:n},throwError:{value:a},toStringOrDefault:{value:i}}))
